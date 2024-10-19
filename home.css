@@ -1,0 +1,463 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.nav-bar ul li {
+  margin-right: 20px;
+}
+
+.nav-bar ul li a {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Carousel Section */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  max-height: 1000px;
+  margin: 40px auto;
+  overflow: hidden; /* Ensures only one item shows at a time */
+}
+
+.carousel-container {
+  display: flex;
+  width: 300%; /* Wide enough for all items in the carousel */
+  height: 300%;
+  transition: transform 1s ease-in-out; /* Smooth transition */
+}
+
+.carousel-item {
+  width: 100%; /* Each item takes 100% of the visible space */
+  flex-shrink: 0;
+}
+
+.product-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add some padding for spacing */
+  max-width: 1200px;
+  background-color: white; /* Optional: Background for better contrast */
+  border-radius: 10px; /* Rounded corners for the overview */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.product-image {
+  position: relative; /* Required for absolute positioning */
+  flex: 1; /* Allow image section to grow */
+}
+
+.product-image img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow on image */
+}
+
+.product-details {
+  flex: 1; /* Allow text section to grow */
+  margin-left: 30px; /* Reduced margin for better balance */
+}
+
+.product-details h1 {
+  font-size: 2.5rem; /* Increased font size for heading */
+  margin-bottom: 10px;
+  color: #0071e3; /* Optional: Change color for emphasis */
+}
+
+.product-details p {
+  margin: 10px 0;
+  font-size: 1.2rem; /* Increased font size for readability */
+  line-height: 1.5; /* Better line spacing */
+}
+
+.rent-now {
+  padding: 12px 24px; /* Increased padding */
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem; /* Slightly larger font */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Add some space above the button */
+}
+
+.rent-now:hover {
+  background-color: #005bb5;
+}
+
+/* Carousel Controls */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px; /* Increased padding for buttons */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for buttons */
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.location-button {
+  padding: 12px 24px; /* Increased padding */
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem; /* Slightly larger font */
+  cursor: pointer;
+  text-align: center; /* Center text */
+  display: inline-block; /* Make it behave like a block element */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Add some space above the button */
+}
+
+.location-button:hover {
+  background-color: #005bb5;
+}
+
+/* Hero Section */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Font for a clean look */
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Overview Section */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.nav-bar ul li {
+  margin-right: 20px;
+}
+
+.nav-bar ul li a {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Carousel Section */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 40px auto;
+  overflow: hidden; /* Ensures only one item shows at a time */
+}
+
+.carousel-container {
+  display: flex;
+  width: 300%; /* Wide enough for all items in the carousel */
+  transition: transform 1s ease-in-out; /* Smooth transition */
+}
+
+.carousel-item {
+  width: 100%; /* Each item takes 100% of the visible space */
+  flex-shrink: 0;
+}
+
+.product-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add some padding for spacing */
+  max-width: 1200px;
+  background-color: white; /* Optional: Background for better contrast */
+  border-radius: 10px; /* Rounded corners for the overview */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.product-image {
+  position: relative; /* Required for absolute positioning */
+  flex: 1; /* Allow image section to grow */
+}
+
+.product-image img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow on image */
+}
+
+.product-details {
+  flex: 1; /* Allow text section to grow */
+  margin-left: 30px; /* Reduced margin for better balance */
+}
+
+.product-details h1 {
+  font-size: 2.5rem; /* Increased font size for heading */
+  margin-bottom: 10px;
+  color: #0071e3; /* Optional: Change color for emphasis */
+}
+
+.product-details p {
+  margin: 10px 0;
+  font-size: 1.2rem; /* Increased font size for readability */
+  line-height: 1.5; /* Better line spacing */
+}
+
+.rent-now {
+  padding: 12px 24px; /* Increased padding */
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem; /* Slightly larger font */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Add some space above the button */
+}
+
+.rent-now:hover {
+  background-color: #005bb5;
+}
+
+/* Carousel Controls */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px; /* Increased padding for buttons */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for buttons */
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.location-button {
+  padding: 12px 24px; /* Increased padding */
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem; /* Slightly larger font */
+  cursor: pointer;
+  text-align: center; /* Center text */
+  display: inline-block; /* Make it behave like a block element */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Add some space above the button */
+}
+
+.location-button:hover {
+  background-color: #005bb5;
+}
+
+/* Hero Section */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Font for a clean look */
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Overview Section */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Clean font */
+  background-color: #f0f4f8; /* Light grey background for the body */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Overview Section */
+.Overview {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  padding: 40px;
+  background: #f9f9f9;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Overview h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.Overview .tagline {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.Overview p {
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 15px;
+}
+
+.Overview button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: white;
+  background: #007aff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.Overview button:hover {
+  background: #005bb5;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Clean font */
+  background-color: #f0f4f8; /* Light grey background for the body */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Overview Section */
+.Overview {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  padding: 40px;
+  background: #f9f9f9;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Overview h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.Overview .tagline {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.Overview p {
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 15px;
+}
+
+.Overview button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: white;
+  background: #007aff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.Overview button:hover {
+  background: #005bb5;
+}

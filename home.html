@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Our Marketplace</title>
+  <link rel="stylesheet" href="home.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="Categories.html">Categories</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="Overview">
+    <h1>Welcome to We-Boarding</h1>
+    <p class="tagline">Explore our trusted boarding houses</p>
+    <p>Our boarding house website offers a user-friendly platform for students and professionals seeking comfortable, affordable accommodation. With detailed listings of available rooms, an easy online booking system, and a vibrant community for social engagement, we ensure a homely atmosphere.</p>
+    <p>Conveniently located near public transportation and local amenities, we provide on-site support to foster a safe and welcoming environment. Join us for a living experience that feels like home!</p>
+    <button>Start Browsing</button>
+</section>
+
+
+  <!-- Carousel Section for Boarding Houses -->
+  <section class="carousel">
+    <div class="carousel-container">
+      <!-- Carousel Inner Container with Multiple Boarding Houses -->
+      <div class="carousel-item">
+        <div class="product-overview">
+          <div class="product-image">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/497806866.jpg?k=4a330f6ff9d5a80ae4613403826d225632b149851e5b085a8080e451c08ad8f2&o=&hp=1" alt="Juan Boarding House">
+          </div>
+          <div class="product-details">
+            <h1>Juan Boarding House</h1>
+            <p>Near ISU Echague</p>
+            <p>Comfortable, convenient, and affordable boarding</p>
+            <p>house located close to the campus.</p>
+            <p>Price: Php 3,000 / month</p>
+            <p>_____________________________________</p>
+      
+            <button class="location-button" onclick="window.location.href='camarag_map.html'">Show Location</button>
+            <button class="rent-now">Rent Now</button>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="product-overview">
+          <div class="product-image">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/497806875.jpg?k=0fdd6d301ccfec70ec2d0c98ee6e73799e21c8f1e0b2644c5f8f7f2b206e4340&o=&hp=1" alt="Ibay Boarding House">
+          </div>
+          <div class="product-details">
+            <h1>Ibay Boarding House</h1>
+            <p>Located in Pinzon Phase 2</p>
+            <p>Price: Php 2,800 / month</p>
+              <button class="location-button" onclick="window.location.href='camarag_map.html'">Show Location</button>
+            <button class="rent-now">Rent Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="product-overview">
+          <div class="product-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQQC17RN-GkLyGB1e_oGPzCFtSDzKqqhrjCAJRmUcNnT2uR3SFgBMgVu83-5Lv5o_0yg&usqp=CAU" alt="SNJ Boarding House">
+          </div>
+          <div class="product-details">
+            <h1>SNJ Boarding House</h1>
+            <p>Beside Ms. G</p>
+            <p>Price: Php 3,200 / month</p>
+            <button class="rent-now">Rent Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control prev" onclick="moveCarousel(-1)"><</button>
+    <button class="carousel-control next" onclick="moveCarousel(1)">></button>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Our Marketplace</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="home.js"></script>
+</body>
+</html>
+
+
