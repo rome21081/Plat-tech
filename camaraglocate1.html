@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Custom Map Example</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.awesome-markers/dist/leaflet.awesome-markers.css" />
+
+    <style>
+        /* Style for the map container */
+        #map {
+            height: 90vh; /* Increased height for the map */
+            width: 100%; /* Full width */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; /* Removed padding for full-screen effect */
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            margin: 0; /* Remove margin for alignment */
+            color: white; /* Change title color to white for visibility */
+        }
+
+        /* Style for the header and navigation bar */
+        .header {
+            display: flex; /* Use flexbox for alignment */
+            justify-content: space-between; /* Space between title and nav */
+            align-items: center; /* Align items vertically */
+            background-color: #343a40; /* Dark background for header */
+            padding: 10px 20px; /* Padding for header */
+        }
+
+        .nav-bar ul {
+            list-style-type: none; /* Remove bullet points */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Align items horizontally */
+            align-items: center; /* Align items vertically in the nav */
+        }
+
+        .nav-bar li {
+            margin: 0 15px; /* Space between menu items */
+        }
+
+        .nav-bar a {
+            color: white; /* Text color for links */
+            text-decoration: none; /* Remove underline from links */
+            padding: 5px 10px; /* Padding for links */
+            transition: background-color 0.3s; /* Smooth background transition */
+        }
+
+        .nav-bar a:hover {
+            background-color: #495057; /* Change background on hover */
+            border-radius: 5px; /* Rounded corners for hover effect */
+        }
+
+        .location-input {
+            display: flex; /* Flexbox for input layout */
+            align-items: center; /* Align items vertically */
+        }
+
+        .location-input select {
+            padding: 10px;
+            margin-right: 10px; /* Space between select and button */
+            border-radius: 20px; /* Rounded corners for select */
+            border: 1px solid #ced4da; /* Border style for select */
+        }
+
+        .location-input button {
+            padding: 10px 20px;
+            border-radius: 20px; /* Rounded corners for button */
+            background-color: #007bff; /* Button color */
+            color: white; /* Button text color */
+            border: none; /* No border */
+            cursor: pointer; /* Pointer on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .location-input button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Style for the footer */
+        footer {
+    text-align: center; /* Center text horizontally */
+    padding: 2px 0; /* Minimal vertical padding */
+    background-color: #e9ecef; /* Footer background color */
+    position: relative; /* Keep it relative to the document flow */
+    height: 30px; /* Set a smaller height for the footer */
+    width: 100%; /* Full width */
+    bottom: 0; /* Position at the bottom */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Camarag Map</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Categories.html">Categories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li class="location-input">
+                    <select id="locationSelect">
+                        <option value="">Select a location</option>
+                        <option value="16.722647641388185,121.68517511034149">Camarag Village</option>
+                        <option value="16.723347641388185,121.68507841034149">SNJ Boarding House</option>
+                        <option value="16.722647641388185,121.6855000">Aljades Boarding House</option>
+                        <option value="16.7200,121.6900">ISU MAIN CAMPUS</option>
+                    </select>
+                    <button onclick="updateMarker()">Go</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 We-Boarding Map. All rights reserved. SNJ GROUP</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.awesome-markers"></script>
+    <script>
+        // Initialize the map at the new location
+        const map = L.map('map').setView([16.722647641388185, 121.68517511034149], 15); // Set the view to new coordinates
+
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 25,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Create multiple markers with unique names
+        const markersData = [
+            { coords: [16.722647641388185, 121.68517511034149], name: 'Camarag Village' },
+            { coords: [16.723347641388185, 121.68507841034149], name: 'SNJ Boarding House' },
+            { coords: [16.722647641388185, 121.6855000], name: 'Aljades Boarding House' },
+            { coords: [16.7200, 121.6900], name: 'ISU MAIN CAMPUS' }
+        ];
+
+        // Add markers to the map and store them for later use
+        const markers = {};
+        markersData.forEach(markerData => {
+            const marker = L.marker(markerData.coords, {
+                icon: L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    markerColor: 'blue' // Default color for all markers
+                })
+            }).addTo(map);
+            marker.bindPopup(markerData.name); // Bind popup to the marker
+            markers[markerData.name] = marker; // Store marker with name as key
+        });
+
+        // Function to update the map based on selected location
+        function updateMarker() {
+            const selectedValue = document.getElementById('locationSelect').value;
+            if (selectedValue) {
+                const coords = selectedValue.split(',');
+                const lat = parseFloat(coords[0]);
+                const lng = parseFloat(coords[1]);
+
+                // Set the map view and zoom in closer
+                map.setView([lat, lng], 19); // Center the map on the selected location and zoom in
+
+                // Highlight the selected marker and open its popup
+                Object.values(markers).forEach(marker => {
+                    marker.setIcon(L.AwesomeMarkers.icon({
+                        icon: 'info-sign',
+                        markerColor: 'blue' // Reset all markers to default color
+                    }));
+                });
+
+                // Find the selected marker by coordinates
+                const selectedMarker = markers[markersData.find(m => m.coords[0] === lat && m.coords[1] === lng).name];
+
+                // Change the color for the selected marker and open its popup
+                if (selectedMarker) {
+                    selectedMarker.setIcon(L.AwesomeMarkers.icon({
+                        icon: 'info-sign',
+                        markerColor: 'red' // Change color for selected marker
+                    }));
+
+                    // Open the popup for the selected marker after zooming in
+                    setTimeout(() => {
+                        selectedMarker.openPopup(); // Open popup for selected marker
+                    }, 200); // Delay to ensure the zoom animation completes before opening the popup
+                }
+            } else {
+                alert("Please select a location.");
+            }
+        }
+    </script>
+</body>
+</html>

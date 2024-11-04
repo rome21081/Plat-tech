@@ -1,113 +1,130 @@
-head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Categories</title>
-        
-        <!-- CSS file connection -->
-        <link rel="stylesheet" href="categories.css">
-    </head>
-    <body>
-        <!-- Sidebar Menu -->
-<div class="sidebar">
-    <div class="sidebar-header">
-        <h2>Menu</h2>
-    </div>
-    <ul class="menu">
-        <li>
-            <a href="home.html">
-                <i class="fas fa-home"></i>
-                <span>Home</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fas fa-user"></i>
-                <span>Profile</span>
-            </a>
-        </li>
-        <li>
-            <a href="Contact.html">
-                <i class="fas fa-envelope"></i>
-                <span>Messages</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fas fa-cog"></i>
-                <span>Settings</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fas fa-sign-out-alt"></i>
-                <span>Logout</span>
-            </a>
-        </li>
-    </ul>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    
+    <!-- CSS file connection -->
+    <link rel="stylesheet" href="categories.css">
+</head>
+<body>
+    <!-- Header Bar -->
+    <header class="header-bar">
+        <h2></h2>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="home.html">
+                        <i class=""></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class=""></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
 
-        <!-- Your HTML content goes here -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     
-        <div class="container">
-        
-            <div class="slide">
-        
-                <div class="rectangle"></div>
-                <div class="item" style="background-image: url(https://i.ytimg.com/vi/MpQn0n0cJKw/maxresdefault.jpg);">
-                    <div class="content">
-                        <div class="name">Camarag Village</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>   
-                    </div>
+                <li class="dropdown"> 
+    <div class="dropdown-content" id="myDropdown">
+        <select id="locationSelect">
+            <option value="">Categories</option>
+            <option value="Camarag">Camarag</option>
+            <option value="Phinzon Phase 1">Phinzon Phase 1</option>
+            <option value="Phinzon Phase 2">Phinzon Phase 2</option>
+            <option value="ISU Coop">ISU Coop</option>
+            <option value="ISU Boarding">ISU Boarding</option>
+            <option value="Velsaco">Velsaco</option>
+        </select>
+        <button id="goButton">Go</button>
+    </div>
+</li>
+
                 
+                <li>
+                    <a href="Contact.html">
+                        <i class=""></i>
+                        <span>Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Contact.html">
+                        <i class=""></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class=""></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class=""></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Your HTML content goes here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <div class="container">
+        <div class="slide">
+            <div class="rectangle"></div>
+            <div class="item" style="background-image: url(https://i.ytimg.com/vi/MpQn0n0cJKw/maxresdefault.jpg);">
+                <div class="content">
+                    <div class="name">Camarag Village</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <a href="camarag.html"><button>See More</button></a>
                 </div>
-                <div class="item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjnOy1R43OGGiDOJPYUS7MDP0TU99Zv2wJw&s);">
-                    <div class="content">
-                        <div class="name">Phinzon Phase 2</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(https://images.contentstack.io/v3/assets/blt8ede3f648df7664a/bltcaf6308b3f040470/668e00fc534bb92dde26fcbe/GettyImages-139494543-fotor-2024071015329.jpg);">
-                    <div class="content">
-                        <div class="name">Phinzon Phase 1</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(https://i0.wp.com/josoromabuilders.wordpress.com/wp-content/uploads/2019/04/pers-01.jpg?ssl=1);">
-                    <div class="content">
-                        <div class="name">Velasaco</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(https://envoplan.co.uk/wp-content/uploads/2021/09/Space-Efficiency-And-Boarding-House-Layout-Planning-01.jpg);">
-                    <div class="content">
-                        <div class="name">Isu Coop</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/39dcba181036319.651603b0ec063.png);">
-                    <div class="content">
-                        <div class="name">ISU boarding</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-        
             </div>
-        
-            <div class="button">
-                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjnOy1R43OGGiDOJPYUS7MDP0TU99Zv2wJw&s);">
+                <div class="content">
+                    <div class="name">Phinzon Phase 2</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
             </div>
-        
+            <div class="item" style="background-image: url(https://images.contentstack.io/v3/assets/blt8ede3f648df7664a/bltcaf6308b3f040470/668e00fc534bb92dde26fcbe/GettyImages-139494543-fotor-2024071015329.jpg);">
+                <div class="content">
+                    <div class="name">Phinzon Phase 1</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i0.wp.com/josoromabuilders.wordpress.com/wp-content/uploads/2019/04/pers-01.jpg?ssl=1);">
+                <div class="content">
+                    <div class="name">Velasaco</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://envoplan.co.uk/wp-content/uploads/2021/09/Space-Efficiency-And-Boarding-House-Layout-Planning-01.jpg);">
+                <div class="content">
+                    <div class="name">Isu Coop</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/39dcba181036319.651603b0ec063.png);">
+                <div class="content">
+                    <div class="name">ISU boarding</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
         </div>
-        <!-- JavaScript file connection -->
-        <script src="categories.js"></script>
-    </body>
-    </html>
-<!--Font Awesome CDN-->
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <!-- JavaScript file connection -->
+    <script src="categories.js"></script>
+</body>
+</html>
