@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We-Boarding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Tenant.css">
+    <style>
+        /* Flash message CSS */
+        #message {
+            font-size: 16px;
+            color: red;
+            transition: opacity 0.5s ease;
+            opacity: 0;
+        }
+
+        #message.flash {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="nav-bar">
+          <img src="https://i.pinimg.com/originals/7d/42/58/7d42584bf2c0a162485b7a1622fe60c6.webp" alt="Microsoft" class="logo">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="Tenant.html">We-Book</a></li>
+            <li><a href="Contact.html">About Us</a></li>
+          </ul>
+    
+          <ul class="right-menu">
+            <li>
+                <a href="userprofile.html">
+                    <i class="fas  fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+        </nav>
+      </header>
+
+ <!-- Main Section -->
+<section class="main-content">
+    <div class="contact-box">
+        <h1>Add or Update your <span>Boarding house!</span></h1>
+
+        <!-- Dropdown to choose whether to Add New or Update Existing -->
+        <div class="form-choice">
+            <label>Select action:</label>
+            <select id="actionSelect">
+                <option value="new">Add New Boarding House</option>
+                <option value="update">Update Existing Boarding House</option>
+            </select>
+        </div>
+
+        <!-- Add New Boarding House Form -->
+        <form id="contactForm" class="new-entry">
+            <input type="text" id="ownerName" placeholder="Owner's Full Name">
+            <input type="text" id="phoneNumber" placeholder="Phone Number">
+            <input type="text" id="details" placeholder="Boarding House Details">
+            <input type="text" id="location" placeholder="Location">
+            <input type="text" id="facebookAccount" placeholder="Facebook Account">
+            <textarea id="messageField" placeholder="Message"></textarea>
+            
+            <!-- Existing Images Section -->
+            <div id="existingImages" class="image-gallery" style="display: none;">
+                <h3>Existing Images</h3>
+                <div class="image-container">
+                    <img id="kitchenImage" src="" alt="Kitchen Image">
+                    <img id="roomImage" src="" alt="Room Image">
+                    <img id="livingRoomImage" src="" alt="Living Room Image">
+                    <img id="comfortRoomImage" src="" alt="Comfort Room Image">
+                </div>
+            </div>
+
+            <!-- File upload buttons -->
+            <label for="newKitchenImage" class="attach-button">Attach Kitchen Image</label>
+            <input type="file" id="newKitchenImage" accept="image/*" style="display:none;">
+            <label for="newRoomImage" class="attach-button">Attach Room Image</label>
+            <input type="file" id="newRoomImage" accept="image/*" style="display:none;">
+            <label for="newCRImage" class="attach-button">Attach CR Image</label>
+            <input type="file" id="newCRImage" accept="image/*" style="display:none;">
+            <label for="newFrontImage" class="attach-button">Attach Front Image</label>
+            <input type="file" id="newFrontImage" accept="image/*" style="display:none;">
+            
+            <div class="button-container">
+                <button type="submit" id="submitButton">Send</button>
+            </div>
+        </form>
+
+        <!-- Existing Boarding Houses (for update) -->
+        <div id="existingHouses" class="existing-houses" style="display: none;">
+            <h2>Existing Boarding Houses</h2>
+            <ul id="housesList">
+                <li data-id="1" class="house-item">
+                    EJ's Boarding House
+                    <button class="update-btn" data-id="1">Update</button>
+                </li>
+                <li data-id="2" class="house-item">
+                    Boarding House 2 
+                    <button class="update-btn" data-id="2">Update</button>
+                </li>
+                <li data-id="3" class="house-item">
+                    Boarding House 3 
+                    <button class="update-btn" data-id="3">Update</button>
+                </li>
+            </ul>
+        </div>
+
+        <p id="message" style="display:none;">You already submitted</p>
+    </div>
+</section>
+
+    
+    <script>
+        // JavaScript for flash message functionality
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form submission for demo purposes
+
+            // Show and flash the message
+            var message = document.getElementById('message');
+            message.style.display = 'block';
+            message.classList.add('flash');
+
+            // Hide the message after a short delay
+            setTimeout(function() {
+                message.classList.remove('flash');
+                setTimeout(function() {
+                    message.style.display = 'none';
+                }, 500);
+            }, 2000);  // Message stays visible for 2 seconds
+
+        });
+    </script>
+
+    <script>
+         // Toggle the dropdown visibility
+function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+function updateMarker() {
+    var select = document.getElementById("locationSelect");
+    var selectedValue = select.options[select.selectedIndex].value;
+    console.log(selectedValue); // Handle the selected location
+}
+
+document.getElementById('goButton').onclick = function() {
+    updateMarker();
+};
+
+function updateMarker() {
+    const select = document.getElementById('locationSelect');
+    const selectedValue = select.value;
+
+    // Redirect based on the selected value
+    switch(selectedValue) {
+        case 'Camarag':
+            window.location.href = 'camarag.html';
+            break;
+        case 'Phinzon Phase 1':
+            window.location.href = 'phinzon_phase_1.html';
+            break;
+        case 'Phinzon Phase 2':
+            window.location.href = 'phinzon_phase_2.html';
+            break;
+        case 'ISU Coop':
+            window.location.href = 'isu_coop.html';
+            break;
+        case 'ISU Boarding':
+            window.location.href = 'isu_boarding.html';
+            break;
+        case 'Velsaco':
+            window.location.href = 'velsaco.html';
+            break;
+        default:
+            alert('Please select a category to proceed.'); // Alert for empty selection
+            break;
+    }
+}
+
+    </script>
+
+    <script>
+// Show or hide form based on action selection
+document.getElementById('actionSelect').addEventListener('change', function () {
+    const action = this.value;
+    const newEntryForm = document.querySelector('.new-entry');
+    const existingHousesList = document.getElementById('existingHouses');
+
+    if (action === 'new') {
+        newEntryForm.style.display = 'block'; // Show Add New Form
+        existingHousesList.style.display = 'none'; // Hide Update List
+        resetForm(); // Reset the form for a new entry
+    } else if (action === 'update') {
+        newEntryForm.style.display = 'none'; // Hide Add New Form
+        existingHousesList.style.display = 'block'; // Show Update List
+    }
+});
+
+// Event listener for the Update buttons
+document.querySelectorAll('.update-btn').forEach((button) => {
+    button.addEventListener('click', function () {
+        const houseId = this.dataset.id;
+
+        // Simulate fetching data for the selected house (this data could come from an API in a real app)
+        const houseData = getHouseData(houseId);
+
+        // Populate the form with the house details
+        populateForm(houseData);
+
+        // Populate existing images
+        displayExistingImages(houseData.images);
+
+        // Switch back to the form
+        document.querySelector('.new-entry').style.display = 'block';
+        document.getElementById('existingHouses').style.display = 'none';
+    });
+});
+
+// Mock function to get house data
+function getHouseData(id) {
+    const mockData = {
+        1: {
+            ownerName: 'EJ Beunadino',
+            phoneNumber: '1234567890',
+            details: 'Open for Men and Women.',
+            location: 'Camarag Village',
+            facebookAccount: 'EJ Beunadino',
+            message: 'Available for students.',
+            images: {
+                kitchen: 'https://i.pinimg.com/736x/f8/ab/fa/f8abfa3d0d5c2cbfdc613c31e811ebca.jpg',
+                room: 'https://i.pinimg.com/736x/4f/70/4f/4f704f98ed60a9813a28a776000bcd10.jpg',
+                livingRoom: 'https://i.pinimg.com/736x/1b/97/6d/1b976dfe7e63876ecef1f7241c7b9f1a.jpg',
+                comfortRoom: 'https://i.pinimg.com/736x/d2/71/8a/d2718af37e78f93cb3a6cdb0c72d008c.jpg',
+            },
+        },
+        2: {
+            ownerName: 'Jane Smith',
+            phoneNumber: '0987654321',
+            details: 'Single room with shared kitchen.',
+            location: 'Phinzon Phase 1',
+            facebookAccount: 'jane.smith',
+            message: 'Affordable price.',
+            images: {
+                kitchen: 'kitchen2.jpg',
+                room: 'room2.jpg',
+                livingRoom: 'livingroom2.jpg',
+                comfortRoom: 'comfortroom2.jpg',
+            },
+        },
+        3: {
+            ownerName: 'Emily Brown',
+            phoneNumber: '1122334455',
+            details: 'Spacious house with private comfort room.',
+            location: 'Velasco',
+            facebookAccount: 'emily.brown',
+            message: 'Great for families.',
+            images: {
+                kitchen: 'kitchen3.jpg',
+                room: 'room3.jpg',
+                livingRoom: 'livingroom3.jpg',
+                comfortRoom: 'comfortroom3.jpg',
+            },
+        },
+    };
+
+    return mockData[id];
+}
+
+// Function to populate the form with existing house data
+function populateForm(data) {
+    document.getElementById('ownerName').value = data.ownerName;
+    document.getElementById('phoneNumber').value = data.phoneNumber;
+    document.getElementById('details').value = data.details;
+    document.getElementById('location').value = data.location;
+    document.getElementById('facebookAccount').value = data.facebookAccount;
+    document.getElementById('messageField').value = data.message;
+}
+
+// Function to display existing images
+function displayExistingImages(images) {
+    document.getElementById('existingImages').style.display = 'block';
+    document.getElementById('kitchenImage').src = images.kitchen;
+    document.getElementById('roomImage').src = images.room;
+    document.getElementById('livingRoomImage').src = images.livingRoom;
+    document.getElementById('comfortRoomImage').src = images.comfortRoom;
+}
+
+// Function to reset the form
+function resetForm() {
+    document.getElementById('ownerName').value = '';
+    document.getElementById('phoneNumber').value = '';
+    document.getElementById('details').value = '';
+    document.getElementById('location').value = '';
+    document.getElementById('facebookAccount').value = '';
+    document.getElementById('messageField').value = '';
+    document.getElementById('existingImages').style.display = 'none';
+}
+
+    </script>
+</body>
+</html>

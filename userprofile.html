@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="userprofile_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+      <div class="profile-picture" onclick="document.getElementById('profilePicture').click();">
+        <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=" alt="Profile Picture" id="profileImage" style="cursor: pointer;">
+        <input type="file" id="profilePicture" accept="image/*" style="display: none;">
+    </div>
+    
+
+        <div class="leftbox">
+          <nav>
+            <a id="profile" class="active"><i class="fa fa-user"></i></a>
+            <a id="payment"><i class="fa fa-credit-card"></i></a>
+            <a id="subscription"><i class="fa fa-tv"></i></a>
+            <a id="privacy"><i class="fa fa-tasks"></i></a>
+            <a id="settings"><i class="fa fa-cog"></i></a>
+            <a href="javascript:void(0);" id="back-btn" onclick="goBack()"><i class="fa fa-arrow-left"></i></a>
+            
+          </nav>
+        </div>
+        <div class="rightbox">
+          <div class="profile">
+            <h1>Personal Info</h1>
+            <h2>Full Name</h2>
+             <input type="text" placeholder="Name" id="name">
+            <button class="btn" onclick="saveProfile('name')">Save</button>
+
+            <h2>Birthday</h2>
+            <input type="text" placeholder="Age" id="age">
+            <button class="btn" onclick="saveProfile('age')">Save</button>
+         
+            <h2>Gender</h2>
+            <input type="text" placeholder="Gender" id="gender">
+            <button class="btn" onclick="saveProfile('gender')">Save</button>
+        
+            <h2>Email</h2>
+            <input type="text" placeholder="Email Address" id="email">
+            <button class="btn" onclick="saveProfile('email')">Save</button>
+
+            <h2>Password </h2>
+            <input type="text" placeholder="password" id="password">
+            <button class="btn" onclick="saveProfile('password')">Save</button>
+          </div>
+          
+          <div class="payment noshow">
+            
+            <h1>Payment Info</h1>
+            <h2>Payment Method</h2>
+            <input type="text" placeholder="Payment Method" id="paymentmethod">
+            <select id="payment-method">
+              <option value="">Select Payment </option>
+              <option value="credit-card">Cash</option>
+              <option value="debit-card">Debit Card</option>
+              <option value="paypal">GCash</option>
+              <option value="bank-transfer">Bank Transfer</option>
+            </select>
+                
+            
+            <h2>Billing Address</h2>
+            <input type="text" placeholder="Billing Address" id="billaddress">
+            <button class="btn" onclick="saveProfile('billaddress')">Save</button>
+
+          </div>
+      
+          <div class="subscription noshow">
+            <h1>Your Payment</h1>
+            <h2>Payment Date</h2>
+            <input type="text" placeholder="Payment Date" id="pdate" readonly>
+            <button class="btn" onclick="saveProfile('pdate')">Pay now</button>
+
+            
+            
+            <h2>Add-ons</h2>
+            <input type="text" placeholder="add-ons" id="addons" readonly>
+            
+
+            <h2>Monthly Payment </h2>
+            <input type="text" placeholder="0" id="monthlypay" readonly>
+          </div>
+      
+          <div class="privacy noshow">
+            <h1>Privacy Settings</h1>
+            <h2>Manage Email Notifications</h2>
+            <button class="btn">manage</button>
+            <p></p>
+            <h2>Manage Privacy Settings</h2>
+            <button class="btn">manage</button>
+            <p></p>
+            <h2>View Terms of Use </h2>
+            <button class="btn">view</button>
+            <p></p>
+            <h2>Protect Your Account </h2>
+            <button class="btn">protect</button>
+            <p></p>
+          </div>
+
+       <div class="settings noshow">
+            <h1>Account Settings</h1>
+            <h2>Change Password</h2>
+            <button class="btn">Change</button>
+            <p></p>
+            <h2>Your Devices </h2>
+            <button class="btn">Manage Devices</button>
+            <p></p>
+          </div>
+          
+        </div>
+      </div>
+      <script src="userprofile.js"></script>      
+</body>
+</html>

@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light grey background */
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-bar .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+  }
+  
+  .nav-bar ul li {
+    margin-right: 20px;
+  }
+  
+  .nav-bar ul li a {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-bar ul.right-menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2%;
+  }
+  
+  .nav-bar ul.right-menu li {
+    margin-left: auto;
+  }
+  
+  .nav-bar ul.right-menu li a {
+    color: #333;
+  }
+  
+  .nav-bar ul li a:hover, 
+  .nav-bar ul.right-menu li a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #262626;
+  }
+  
+
+/* General Styling for Cart Container */
+/* General Styling for Cart Container */
+.cart-container {
+    padding: 40px;
+    max-width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row; /* Align both sides horizontally */
+    justify-content: space-between; /* Spread the two sections */
+    gap: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Heading */
+h2 {
+    margin-left: 20%;
+    text-align: center;
+    color: #333;
+ 
+    font-size: 24px;
+}
+
+/* Male and Female Group Styling */
+.male-requests, .female-requests {
+    flex: 1; /* Make both sections take up equal space */
+    width: 48%; /* Keep both sections narrower for separation */
+}
+
+/* Male and Female Group Titles */
+.male-requests h3, .female-requests h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Request List */
+.request-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Request Item */
+.request-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.request-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Boarding House Info */
+.boarding-house-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.owner-image {
+    width: 80px;               /* Set the width of the circle */
+    height: 80px;              /* Set the height of the circle */
+    border-radius: 50%;        /* Make the container circular */
+    overflow: hidden;          /* Hide any part of the image that exceeds the container */
+}
+
+.owner-image img {
+    width: 100%;               /* Make the image fill the width of the container */
+    height: 100%;              /* Make the image fill the height of the container */
+    object-fit: cover;         /* Ensures the image covers the entire area without distorting */
+}
+
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.details span {
+    font-size: 14px;
+}
+
+.details .name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Request Info (Personal Details) */
+.info {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+/* Action Buttons */
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center; /* Center the action buttons */
+}
+
+.accept-btn, .decline-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.accept-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.accept-btn:hover {
+    background-color: #218838;
+}
+
+.decline-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.decline-btn:hover {
+    background-color: #c82333;
+}
+
+/* Status Message Styling */
+.request-item .status {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Send Button */
+.send-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Input and Textarea */
+input[type="text"], textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+/* Message Reply Section */
+.message-reply {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-text {
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    resize: none; /* Prevent resizing */
+}
+
+.send-reply-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.send-reply-btn:hover {
+    background-color: #0056b3;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    .cart-container {
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+
+    .male-requests, .female-requests {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .request-item {
+        padding: 15px;
+    }
+
+    .boarding-house-info {
+        flex-direction: column;
+    }
+
+    .owner-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Ensures the image covers the area and keeps the aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #ddd;
+}
+    h2 {
+        font-size: 20px;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

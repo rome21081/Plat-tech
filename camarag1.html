@@ -3,10 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Card</title>
+  <title>EJ's Boarding House</title>
   <link rel="stylesheet" href="camarag1.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<body>
+  <header class="header">
+      <nav class="nav-bar">
+        <img src="https://i.pinimg.com/originals/7d/42/58/7d42584bf2c0a162485b7a1622fe60c6.webp" alt="Microsoft" class="logo">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+       
+            <div class="dropdown-content" id="myDropdown">
+                <select id="locationSelect">
+                    <option value="">Categories</option>
+                    <option value="Camarag">Camarag</option>
+                    <option value="Phinzon Phase 1">Phinzon Phase 1</option>
+                    <option value="Phinzon Phase 2">Phinzon Phase 2</option>
+                    <option value="ISU Coop">ISU Coop</option>
+                    <option value="ISU Boarding">ISU Boarding</option>
+                    <option value="Velsaco">Velsaco</option>
+                </select>
+                <button id="goButton">Go</button>
+            </div>
+        </li>
+        
+  
+          <li><a href="Tenant.html">We-Book</a></li>
+          <li><a href="Contact.html">About Us</a></li>
+        </ul>
+  
+        <ul class="right-menu">
+          <li>
+              <a href="userprofile.html">
+                  <i class="fas  fa-user"></i>
+              </a>
+          </li>
+          <li>
+              <a href="Cart.html">
+                  <i class="fas fa-shopping-cart"></i>
+              </a>
+          </li>
+      </ul>
+      </nav>
+    </header>
 <body>
   <div class="card-wrapper">
     <div class="card">
@@ -14,38 +55,38 @@
       <div class="product-imgs">
         <div class="img-display">
           <div class="img-showcase">
-            <img src="https://i.pinimg.com/236x/71/c6/66/71c66693282d95685cf17f81b2c8161e.jpg" alt="shoe image">
-            <img src="https://i.pinimg.com/236x/4a/ce/97/4ace970f75ac4ac410e459d198a0aa1e.jpg" alt="shoe image">
-            <img src="https://static.wixstatic.com/media/a6ee86_ee1e5ea7dc80457696fe1ac48225c4c6~mv2.jpg/v1/fill/w_520,h_348,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a6ee86_ee1e5ea7dc80457696fe1ac48225c4c6~mv2.jpg" alt="shoe image">
-            <img src="https://i.pinimg.com/564x/e2/16/c5/e216c5d3ba2356676429bcf10bc5245a.jpg" alt="shoe image">
+            <img src="https://i.pinimg.com/736x/1b/97/6d/1b976dfe7e63876ecef1f7241c7b9f1a.jpg" alt="shoe image">
+            <img src="https://i.pinimg.com/736x/4f/70/4f/4f704f98ed60a9813a28a776000bcd10.jpg" alt="shoe image">
+            <img src="https://i.pinimg.com/736x/d2/71/8a/d2718af37e78f93cb3a6cdb0c72d008c.jpg" alt="shoe image">
+            <img src="https://i.pinimg.com/736x/f8/ab/fa/f8abfa3d0d5c2cbfdc613c31e811ebca.jpg" alt="shoe image">
           </div>
         </div>
         <div class="img-select">
           <div class="img-item">
             <a href="#" data-id="1">
-              <img src="https://i.pinimg.com/236x/71/c6/66/71c66693282d95685cf17f81b2c8161e.jpg" alt="shoe image">
+              <img src="https://i.pinimg.com/736x/1b/97/6d/1b976dfe7e63876ecef1f7241c7b9f1a.jpg" alt="shoe image">
             </a>
           </div>
           <div class="img-item">
             <a href="#" data-id="2">
-              <img src="https://i.pinimg.com/236x/4a/ce/97/4ace970f75ac4ac410e459d198a0aa1e.jpg" alt="shoe image">
+              <img src="https://i.pinimg.com/736x/4f/70/4f/4f704f98ed60a9813a28a776000bcd10.jpg" alt="shoe image">
             </a>
           </div>
           <div class="img-item">
             <a href="#" data-id="3">
-              <img src="https://static.wixstatic.com/media/a6ee86_ee1e5ea7dc80457696fe1ac48225c4c6~mv2.jpg/v1/fill/w_520,h_348,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a6ee86_ee1e5ea7dc80457696fe1ac48225c4c6~mv2.jpg" alt="shoe image">
+              <img src="https://i.pinimg.com/736x/d2/71/8a/d2718af37e78f93cb3a6cdb0c72d008c.jpg" alt="shoe image">
             </a>
           </div>
           <div class="img-item">
             <a href="#" data-id="4">
-              <img src="https://i.pinimg.com/564x/e2/16/c5/e216c5d3ba2356676429bcf10bc5245a.jpg" alt="shoe image">
+              <img src="https://i.pinimg.com/736x/f8/ab/fa/f8abfa3d0d5c2cbfdc613c31e811ebca.jpg" alt="shoe image">
             </a>
           </div>
         </div>
       </div>
       <!-- card right -->
       <div class="product-content">
-        <h2 class="product-title">Aljade's Boarding House</h2>
+        <h2 class="product-title">EJ's Boarding House</h2>
 
         <div class="product-rating">
           <i class="fas fa-star"></i>
@@ -53,15 +94,16 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star-half-alt"></i>
-          <span>4.7(21)</span>
+          <span>4.7(57)</span>
         </div>
         <div class="product-price">
-          <p class="last-price">Old Rent!: <span>₱1257.00</span></p>
-          <p class="new-price">New Price: <span>$₱1000.00 (5%)</span></p>
+          <p class="last-price">Old Rent!: <span>₱1200.00</span></p>
+          <p class="new-price">New Price: <span>₱9000.00 (25%)</span></p>
         </div>
         <div class="product-detail">
           <h2>About this item:</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>EJ's Boarding House, owned by the Mr. EJ Beunadino's family, 
+            is near ISU. Rooms start at ₱1,000/month, Convenient, affordable, and safe.</p>
           <ul>
             <li>Bed Spacer: <span>Men</span></li>
             <li>Bed Spacer: <span>Women</span></li>
@@ -73,20 +115,207 @@
         <div class="purchase-info"> 
             <input type="number" min="0" value="1">
             <a href="camaragrent1.html" class="btn">Add to Cart <i class="fas fa-shopping-cart"></i></a>
-            <a href="camaraglocate1.html" class="btn">Locate <i class="fas fa-map-marker-alt"></i></a>
+          <!-- Locate Button -->
+<a href="camaraglocate1.html" class="btn">Locate <i class="fas fa-map-marker-alt"></i></a>
+<button class="btn rate-btn">Rate <i class="fas fa-star"></i></button>
+
+<div id="ratingModal" style="display: none;">
+  <div class="modal-content">
+      <button class="close-btn">&times;</button>
+      <h2>Rate the Boarding House</h2>
+      <form id="ratingForm">
+          <!-- Accommodation -->
+          <div class="rating-category">
+              <label>Accommodation:</label>
+              <div class="stars" data-category="accommodation">
+                  <i class="fas fa-star" data-value="1"></i>
+                  <i class="fas fa-star" data-value="2"></i>
+                  <i class="fas fa-star" data-value="3"></i>
+                  <i class="fas fa-star" data-value="4"></i>
+                  <i class="fas fa-star" data-value="5"></i>
+              </div>
+          </div>
+          <!-- Safety -->
+          <div class="rating-category">
+              <label>Safety:</label>
+              <div class="stars" data-category="safety">
+                  <i class="fas fa-star" data-value="1"></i>
+                  <i class="fas fa-star" data-value="2"></i>
+                  <i class="fas fa-star" data-value="3"></i>
+                  <i class="fas fa-star" data-value="4"></i>
+                  <i class="fas fa-star" data-value="5"></i>
+              </div>
+          </div>
+          <!-- Price -->
+          <div class="rating-category">
+              <label>Price:</label>
+              <div class="stars" data-category="price">
+                  <i class="fas fa-star" data-value="1"></i>
+                  <i class="fas fa-star" data-value="2"></i>
+                  <i class="fas fa-star" data-value="3"></i>
+                  <i class="fas fa-star" data-value="4"></i>
+                  <i class="fas fa-star" data-value="5"></i>
+              </div>
+          </div>
+          <!-- Comfortability -->
+          <div class="rating-category">
+              <label>Comfortability:</label>
+              <div class="stars" data-category="comfortability">
+                  <i class="fas fa-star" data-value="1"></i>
+                  <i class="fas fa-star" data-value="2"></i>
+                  <i class="fas fa-star" data-value="3"></i>
+                  <i class="fas fa-star" data-value="4"></i>
+                  <i class="fas fa-star" data-value="5"></i>
+              </div>
+          </div>
+          <button type="button" id="submitRating" class="submit-btn">Submit</button>
+      </form>
+  </div>
+</div>
+
+
+
         </div>
         
         <div class="social-links">
           <p>Share At:</p>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger"></i> </a>
+          <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdirect%2Finbox%2F%3F__coig_login%3D1"><i class="fab fa-instagram"></i></a>
+          <a href="https://telegram.org/"><i class="fab fa-telegram"></i></a>
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    // Toggle the dropdown visibility
+function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+function updateMarker() {
+    var select = document.getElementById("locationSelect");
+    var selectedValue = select.options[select.selectedIndex].value;
+    console.log(selectedValue); // Handle the selected location
+}
+
+document.getElementById('goButton').onclick = function() {
+    updateMarker();
+};
+
+function updateMarker() {
+    const select = document.getElementById('locationSelect');
+    const selectedValue = select.value;
+
+    // Redirect based on the selected value
+    switch(selectedValue) {
+        case 'Camarag':
+            window.location.href = 'camarag.html';
+            break;
+        case 'Phinzon Phase 1':
+            window.location.href = 'phinzon_phase_1.html';
+            break;
+        case 'Phinzon Phase 2':
+            window.location.href = 'phinzon_phase_2.html';
+            break;
+        case 'ISU Coop':
+            window.location.href = 'isu_coop.html';
+            break;
+        case 'ISU Boarding':
+            window.location.href = 'isu_boarding.html';
+            break;
+        case 'Velsaco':
+            window.location.href = 'velsaco.html';
+            break;
+        default:
+            alert('Please select a category to proceed.'); // Alert for empty selection
+            break;
+    }
+}
+
+  </script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const rateBtn = document.querySelector(".rate-btn");
+      const ratingModal = document.getElementById("ratingModal");
+      const closeModalBtn = document.querySelector(".close-btn");
+      const starsContainers = document.querySelectorAll(".stars");
+      const submitBtn = document.getElementById("submitRating");
+  
+      // Open modal when "Rate" button is clicked
+      rateBtn.addEventListener("click", function () {
+          ratingModal.style.display = "flex"; // Show the modal
+      });
+  
+      // Close modal when "Close" button is clicked
+      closeModalBtn.addEventListener("click", function () {
+          ratingModal.style.display = "none"; // Hide the modal
+      });
+  
+      // Handle star selection for each category
+      starsContainers.forEach((container) => {
+          container.addEventListener("click", function (e) {
+              if (e.target.tagName === "I") {
+                  const selectedValue = parseInt(e.target.getAttribute("data-value"));
+                  const stars = [...container.children];
+  
+                  // Highlight the selected stars
+                  stars.forEach((star, index) => {
+                      if (index < selectedValue) {
+                          star.classList.add("active");
+                      } else {
+                          star.classList.remove("active");
+                      }
+                  });
+  
+                  // Save selected rating in the dataset
+                  container.setAttribute("data-rating", selectedValue);
+              }
+          });
+      });
+  
+      // Submit ratings when the form is submitted
+      submitBtn.addEventListener("click", function () {
+          const ratings = {};
+  
+          // Collect ratings from all categories
+          starsContainers.forEach((container) => {
+              const category = container.getAttribute("data-category");
+              const rating = container.getAttribute("data-rating");
+              ratings[category] = rating ? parseInt(rating) : 0; // Default to 0 if no rating
+          });
+  
+          // Ensure all categories are rated
+          const allRated = Object.values(ratings).every((rating) => rating > 0);
+          if (!allRated) {
+              alert("Please rate all categories before submitting.");
+              return;
+          }
+  
+          // Print ratings for debugging (can be replaced with an API call or backend submission)
+          console.log("Ratings Submitted:", ratings);
+  
+          // Hide the modal and show a thank-you message
+          ratingModal.style.display = "none";
+          alert("Thank you for your ratings!");
+      });
+  });
+  </script>
+  
   <script src="camarag1.js"></script>
 </body>
 </html>

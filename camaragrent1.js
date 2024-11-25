@@ -1,11 +1,43 @@
-$(document).ready(function() {
-    $('#contact_form').on('submit', function(e) {
+$(document).ready(function () {
+    $('#contact_form').on('submit', function (e) {
         e.preventDefault(); // Prevent default form submission
 
-        // Display success message
-        $('#success_message').show();
+        let allFilled = true;
+
+        // Validate inputs and textarea
+        $('#contact_form input, #contact_form textarea').each(function () {
+            if ($(this).val().trim() === '') {
+                allFilled = false;
+                $(this).addClass('error'); // Highlight empty fields
+            } else {
+                $(this).removeClass('error'); // Remove highlight if field is filled
+            }
+        });
+
+        if (!allFilled) {
+            // Display error message if fields are empty
+            $('#success_message').hide(); // Hide success message if visible
+            alert('Please fill out all required fields.'); // Simple alert for missing fields
+            return;
+        }
+
+        // All fields are filled
+        $('#success_message').show(); // Show success message
+        alert('Your message has been submitted successfully!'); // Notify submission
+
+        // Redirect after 2 seconds
+        setTimeout(function () {
+            window.history.back();
+        }, 2000); // Delay for 2 seconds
+    });
+
+    // Remove error styling on focus
+    $('#contact_form input, #contact_form textarea').on('focus', function () {
+        $(this).removeClass('error');
     });
 });
+
+
 
 $(document).ready(function() {
     $('#contact_form').bootstrapValidator({

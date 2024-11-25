@@ -1,0 +1,454 @@
+
+
+/*user profile */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header Styles */
+/* Style for the header */
+header {
+  position: relative;
+  width: 100%;
+  height: 60px; /* Adjust as needed */
+  background-color: #f8f9fa; /* Light background for clean look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the profile picture container */
+.profile-top-right {
+  position: absolute;
+  top: 50%;
+  right: 10%;  /* Adjust the distance from the right edge */
+  transform: translateY(-50%); /* Vertically center the image */
+}
+
+/* Style for the profile picture */
+.top-profile-pic {
+  width: 25px; /* Adjust size as needed */
+  height: 25px;
+  border-radius: 50%; /* Makes the image circular */
+  border: 2px solid #ddd; /* Optional border for a polished look */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-left: auto;  /* Pushes the image to the right */
+  margin-right: 0;    /* Ensures no extra space on the right */
+}
+
+
+/* Hover effect for the profile picture */
+.top-profile-pic:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Profile Section */
+
+/* Color Variables */
+:root {
+  --logo: #0026ff;
+  --gray: #777777;
+  --black: #070707;
+  --green: #519fe8;
+  --aqua: #020202;
+  --white: #ffffff;
+}
+
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto");
+
+/* Font Families */
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, var(--aqua), var(--green));
+}
+
+.container {
+  background: var(--white);
+  width: 2540px;
+  height: 730px;
+  margin: 5% auto 0;
+  position: sticky;
+  box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+}
+
+.logo {
+  float: right;
+  margin: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--logo);
+  font-weight: 900;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.CTA {
+  width: 1000px;
+  height: 400px;
+  right: -20px;
+  bottom: 0;
+  margin-bottom: 90px;
+  position: absolute;
+  z-index: 1;
+  background: var(--green);
+  font-size: 1em;
+  transform: rotate(-90deg);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.CTA h1 {
+  color: var(--white);
+  margin: 10px 0 0 9px;
+}
+
+.CTA:hover {
+  background: var(--aqua);
+  transform: scale(1.1);
+}
+
+.leftbox {
+  float: left;
+  top: 0%;
+  left: 5%;
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background: var(--green);
+  box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
+}
+/* Style for the back button */
+#back-btn {
+  display: block;
+  padding: 15px 20px;
+  color: white; /* Adjust the text color if needed */
+  text-decoration: none;
+  font-size: 1.2em; /* Adjust the font size as needed */
+  transition: all 0.3s ease;
+  justify-content: center;
+  justify-content: left;
+  left: 5%;
+  margin-left: 15%;
+}
+
+#back-btn:hover {
+  color: #000000d2; /* Change to desired hover color */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  cursor: pointer;
+}
+
+nav a {
+  list-style: none;
+  padding: 50px 50px;
+  color: white;
+  font-size: 5.1em;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+/* Optional: Specific style for when the back button is active or selected */
+#back-btn.active {
+  color: #868686; /* Active back button color */
+}
+
+nav a {
+  list-style: none;
+  padding: 35px;
+  color: var(--white);
+  font-size: 1.1em;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.nav img {
+   height: 100%;
+   width: 100%;
+}
+
+nav a:hover {
+  color: var(--aqua);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+nav a:first-child {
+  margin-top: 7px;
+}
+
+.active {
+  color: var(--aqua);
+}
+
+.rightbox {
+  width: 60%;
+  height: 100%;
+  margin-right: 70px;  /* Keeps a margin from the right */
+  margin-left: auto;   /* Center-aligns the box horizontally */
+  margin-right: auto;  /* Centers the right box in the middle */
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;  /* Keeps the input full-width inside its container */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  margin-left: 20px;  /* Adjust the input slightly to the right */
+}
+
+
+
+.profile,
+.payment,
+.subscription,
+.privacy,
+.settings {
+  transition: opacity 0.5s ease-in;
+  position: absolute;
+  width: 70%;
+}
+
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--green);
+  font-size: 2em;
+  margin: 40px 0 35px;
+}
+
+h2 {
+  color: var(--gray);
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin-left: 2px;
+}
+
+p {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, var(--aqua), rgba(126, 211, 134, 0.5)) 1 0%;
+  border-top: 0;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  padding: 7px 0;
+  color: var(--black);
+}
+
+span {
+  font-size: 0.5em;
+  color: var(--gray);
+}
+
+.btn {
+  float: right;
+  
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: none;
+  color: var(--aqua);
+}
+
+.btn:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+input {
+  border: none; /* No border */
+  border-bottom: 1px solid #b9b9b9; /* Underline */
+  outline: none; /* Remove default outline */
+  padding: 5px 0; /* Padding for spacing */
+  font-size: 0.7em; /* Smaller font size */
+  transition: border-color 0.3s ease; /* Smooth transition */
+  width: 80%; /* Adjust width to make space for the button */
+  margin-right: 10px; /* Space between input and button */
+}
+
+input:focus {
+  border-bottom: 2px solid #7a7a7a; /* Change underline color on focus */
+}
+
+input::placeholder {
+  color: rgba(119, 119, 119, 0.6); /* Lighter placeholder color */
+  font-size: 1em;
+}
+
+/* Button styles */
+.btn {
+  background-color: #edecec; /* Green background */
+  color: rgb(0, 0, 0); /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 6px 8px; /* Padding for size */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  font-size: 0.6em; /* Match button font size with input */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #929292; /* Change color on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active effect */
+.btn:active {
+  transform: translateY(0); /* Reset lift on click */
+}
+
+/* Flexbox for inline alignment */
+.input-container {
+  display: flex; /* Use flexbox to align input and button */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 15px; /* Space between input fields */
+}
+
+.privacy h2,
+.settings h2 {
+  margin-top: 25px;
+}
+
+.noshow {
+  opacity: 0;
+  display: none;
+}
+
+/* Base styling for the dropdown */
+#payment-method {
+  position: absolute;
+  bottom: 126px;
+  left: 180px;
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  padding: 5px; /* Increased padding for better spacing */
+  font-size: 0.8em; /* Standard font size */
+  margin-top: 10px;
+  margin-left: 80px; /* Space between the label and dropdown */
+  min-width: 100px; /* Minimum width */
+  background-color: #edecec; /* White background */
+  color: rgb(17, 18, 17); /* Dark text color for contrast */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions for focus state */
+}
+
+/* Styles when the dropdown is focused */
+#payment-method:focus {
+  outline: none; /* Remove default outline */
+  border: 2px solid #ffffff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(82, 82, 82, 0.5); /* Glow effect on focus */
+}
+
+/* Optional styling for the dropdown options */
+#payment-method option {
+  padding: 10px; /* Space within each option */
+}
+
+/* Change cursor on hover */
+#payment-method:hover {
+  cursor: pointer; /* Hand cursor on hover */
+}
+
+
+
+/* Profile picture container */
+.profile-picture {
+  position: absolute;
+  top: 15px;        /* Adjust vertical positioning */
+  right: 20px;      /* Position 20px from the right edge */
+  width: 70px;      /* Set the size of the profile picture */
+  height: 70px;     /* Set the size of the profile picture */
+  border-radius: 50%;  /* Make the image circular */
+  overflow: hidden;    /* Ensure image stays inside the circle */
+  border: 2px solid #ffffff;  /* Optional: Add a border around the image */
+  cursor: pointer;  /* Pointer cursor on hover */
+  z-index: 10;      /* Ensure it's on top */
+}
+
+/* Style for the profile image */
+.profile-picture img {
+  width: 100%;       /* Make the image fill the container */
+  height: 100%;      /* Make the image fill the container */
+  object-fit: cover; /* Ensure the image doesn't stretch */
+  border-radius: 50%;  /* Ensure the image is also circular */
+  transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for zoom */
+.profile-picture:hover img {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+
+footer {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  right: -20px;
+  text-align: right;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer p {
+  border: none;
+  padding: 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #7d7d7d;
+}
+
+
+
+
+
+

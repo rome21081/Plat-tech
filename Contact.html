@@ -3,83 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agency Landing Page</title>
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="Contact.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">WE-Boarding</div>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="Categories.html">Categories</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="template-btn">Sign Out</button>
-    </header>
+    <!-- Header Section --> 
+    
+   
+  <header class="header">
+    <nav class="nav-bar">
+      <img src="https://i.pinimg.com/originals/7d/42/58/7d42584bf2c0a162485b7a1622fe60c6.webp" alt="Microsoft" class="logo">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Categories.html">Categories</a></li>
+        <li><a href="Contact.html">We-Book</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
 
-    <!-- Main Section -->
-    <section class="main-content">
-        <div class="contact-box">
-            <h1>Rent <span>Now!</span></h1>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Phone">
-                <input type="text" placeholder="Facebook Account">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
+      <ul class="right-menu">
+        <li>
+            <a href="userprofile.html">
+                <i class="fas  fa-user"></i>
+            </a>
+        </li>
+        <li>
+            <a href="Cart.html">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </li>
+    </ul>
+    </nav>
+  </header>
 
-        <div class="contact-details">
-            <div class="detail">
-                <i class="fas fa-envelope"></i>
-                <p>snj@website.com</p>
+    <div class="about-us"> <!-- Container for the content -->
+        <div class="content"> <!-- Content container for text -->
+            <h1>About </h1>
+            <div class="mission"> <!-- Mission section -->
+                <h2></h2>
+                <p>At We Boarding, we make finding and booking your ideal boarding house as simple and convenient as possible. Through a user-friendly platform, we offer detailed listings, virtual tours, and secure online booking options, empowering you to choose the perfect space that meets your preferences. We are dedicated to ensuring a transparent, hassle-free experience for both tenants and landlords, helping you confidently find a place to call home.</p>
             </div>
-            <div class="detail">
-                <i class="fas fa-phone"></i>
-                <p>+63 968 2355 3654 </p>
-            </div>
-            <div class="detail">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>123 Echague, Isabela, Philippines</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-menu">
-            <div class="menu-column">
-                <h4>Menu</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="menu-column">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#">SEO</a></li>
-                    <li><a href="#">Content Marketing</a></li>
-                    <li><a href="#">Website Design</a></li>
-                    <li><a href="#">Social Media Marketing</a></li>
-                </ul>
+            <div class="button-container"> <!-- Container for buttons -->            
+                <button class="team" onclick="window.location.href='team.htm'">Team</button>
+              
+                <button class="contact" onclick="window.location.href='Contact.html'">Contact</button>
             </div>
         </div>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <div class="image"> <!-- Image container -->
+            <img src="https://i.pinimg.com/736x/e1/32/a5/e132a5b7b9ada9ba268f554e22f62894.jpg" alt="Image description">
         </div>
-        <p>&copy; 2024 Agency. All Rights Reserved.</p>
-    </footer>
+    </div>
 </body>
 </html>

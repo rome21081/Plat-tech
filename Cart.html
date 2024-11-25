@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Request Cart</title>
+    <link rel="stylesheet" href="cart.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section (already exists) -->
+    
+    <header class="header">
+        <nav class="nav-bar">
+          <img src="https://i.pinimg.com/originals/7d/42/58/7d42584bf2c0a162485b7a1622fe60c6.webp" alt="Microsoft" class="logo">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="Tenant.html">We-Book</a></li>
+            <li><a href="Contact.html">About Us</a></li>
+          </ul>
+          <h2>Request Details</h2>
+          <ul class="right-menu">
+            <li>
+                <a href="userprofile.html">
+                    <i class="fas  fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+        </nav>
+      </header>
+  
+      <div class="cart-container">
+        
+    
+        <!-- Male Requests -->
+        <div class="male-requests">
+            <h3>Male Requests</h3>
+            <div class="request-list">
+                <!-- Male Request 1 -->
+                <div class="request-item">
+                    <div class="boarding-house-info">
+                        <div class="owner-image">
+                            <img src="https://i.pinimg.com/736x/ba/b8/23/bab823d3667f4d60d2528453628057e0.jpg" alt="Owner Image">
+                        </div>
+                        <div class="details">
+                            <span class="name">Mark Spencer</span>
+                            <span>BSIT 1st year</span>                           
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p><strong>First Name:</strong> Mark</p>
+                        <p><strong>Last Name:</strong> Spencer</p>
+                        <p><strong>E-Mail Address:</strong> mark.spencer@email.com</p>
+                        <p><strong>Phone #:</strong> +63966548521</p>
+                        <p><strong>Address:</strong> 123 Main St, XYZ City</p>
+                        <p><strong>City:</strong> XYZ City</p>
+                        <p><strong>Emergency Contact Person:</strong> Sarah Spencer</p>
+                        <p><strong>Emergency Contact Number:</strong> +63966548522</p>
+                        <p><strong>Facebook Account:</strong> facebook.com/markspencer</p>
+                        <p><strong>Do you want to visit physically?</strong> Yes</p>
+                        <p><strong>Message:</strong> Interested in visiting the boarding house.</p>
+                    </div>
+                      <!-- Status Section: Display current request status -->
+    <p class="status">Status: Pending</p> <!-- Status section -->
+
+    <!-- Message Reply Section -->
+    <div class="message-reply">
+        <textarea placeholder="Enter your reply"></textarea>
+        <button class="send-reply-btn">Send Reply</button>
+    </div>
+
+    <div class="actions">
+        <button class="accept-btn" onclick="updateStatus(this, 'Accepted')">Accept</button>
+        <button class="decline-btn" onclick="updateStatus(this, 'Declined')">Decline</button>
+    </div>
+                </div>
+                <!-- Male Request 2 -->
+                <div class="request-item">
+                    <div class="boarding-house-info">
+                        <div class="owner-image">
+                            <img src="https://i.pinimg.com/736x/53/5e/30/535e3036ae6f8d6083a70c9b60feb47e.jpg" alt="Owner Image">
+                        </div>
+                        <div class="details">
+                            <span class="name">Johnathan Lee</span>
+                            <span>Boarding House Owner</span>
+                            <span>Location: DEF Street, ABC City</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p><strong>First Name:</strong> Johnathan</p>
+                        <p><strong>Last Name:</strong> Lee</p>
+                        <p><strong>E-Mail Address:</strong> johnathan.lee@email.com</p>
+                        <p><strong>Phone #:</strong> +63966548523</p>
+                        <p><strong>Address:</strong> 456 Elm St, DEF City</p>
+                        <p><strong>City:</strong> DEF City</p>
+                        <p><strong>Emergency Contact Person:</strong> Michael Lee</p>
+                        <p><strong>Emergency Contact Number:</strong> +63966548524</p>
+                        <p><strong>Facebook Account:</strong> facebook.com/johnathanlee</p>
+                        <p><strong>Do you want to visit physically?</strong> No</p>
+                        <p><strong>Message:</strong> I will visit virtually if possible.</p>
+                    </div>
+                   <p class="status">Status: Pending</p> <!-- Status section -->
+
+    <!-- Message Reply Section -->
+    <div class="message-reply">
+        <textarea placeholder="Enter your reply"></textarea>
+        <button class="send-reply-btn">Send Reply</button>
+    </div>
+    
+    <div class="actions">
+        <button class="accept-btn" onclick="updateStatus(this, 'Accepted')">Accept</button>
+        <button class="decline-btn" onclick="updateStatus(this, 'Declined')">Decline</button>
+    </div>
+                </div>
+                <!-- Male Request 3 -->
+                <div class="request-item">
+                    <div class="boarding-house-info">
+                        <div class="owner-image">
+                            <img src="https://i.pinimg.com/736x/66/85/19/66851914e895faab9ea4e738a1780952.jpg" alt="Owner Image">
+                        </div>
+                        <div class="details">
+                            <span class="name">Luke Taylor</span>
+                            <span>Boarding House Owner</span>
+                            <span>Location: GHI Street, XYZ City</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p><strong>First Name:</strong> Luke</p>
+                        <p><strong>Last Name:</strong> Taylor</p>
+                        <p><strong>E-Mail Address:</strong> luke.taylor@email.com</p>
+                        <p><strong>Phone #:</strong> +63966548525</p>
+                        <p><strong>Address:</strong> 789 Oak St, XYZ City</p>
+                        <p><strong>City:</strong> XYZ City</p>
+                        <p><strong>Emergency Contact Person:</strong> Emily Taylor</p>
+                        <p><strong>Emergency Contact Number:</strong> +63966548526</p>
+                        <p><strong>Facebook Account:</strong> facebook.com/luketaylor</p>
+                        <p><strong>Do you want to visit physically?</strong> Yes</p>
+                        <p><strong>Message:</strong> Looking forward to a visit soon.</p>
+                    </div>
+                    <p class="status">Status: Pending</p> <!-- Status section -->
+
+                    <!-- Message Reply Section -->
+                    <div class="message-reply">
+                        <textarea placeholder="Enter your reply"></textarea>
+                        <button class="send-reply-btn">Send Reply</button>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="accept-btn" onclick="updateStatus(this, 'Accepted')">Accept</button>
+                        <button class="decline-btn" onclick="updateStatus(this, 'Declined')">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Female Requests -->
+        <div class="female-requests">
+            <h3>Female Requests</h3>
+            <div class="request-list">
+                <!-- Female Request 1 -->
+                <div class="request-item">
+                    <div class="boarding-house-info">
+                        <div class="owner-image">
+                            <img src="https://i.pinimg.com/736x/78/39/6d/78396dcc2bb709cbb80266386967fe67.jpg" alt="Owner Image">
+                        </div>
+                        <div class="details">
+                            <span class="name">Anna Miller</span>
+                            <span>Boarding House Owner</span>
+                            <span>Location: JKL Street, ABC City</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p><strong>First Name:</strong> Anna</p>
+                        <p><strong>Last Name:</strong> Miller</p>
+                        <p><strong>E-Mail Address:</strong> anna.miller@email.com</p>
+                        <p><strong>Phone #:</strong> +63966548527</p>
+                        <p><strong>Address:</strong> 101 Pine St, ABC City</p>
+                        <p><strong>City:</strong> ABC City</p>
+                        <p><strong>Emergency Contact Person:</strong> Jessica Miller</p>
+                        <p><strong>Emergency Contact Number:</strong> +63966548528</p>
+                        <p><strong>Facebook Account:</strong> facebook.com/annamiller</p>
+                        <p><strong>Do you want to visit physically?</strong> No</p>
+                        <p><strong>Message:</strong> I prefer to handle everything online.</p>
+                    </div>
+                    <p class="status">Status: Pending</p> <!-- Status section -->
+
+    <!-- Message Reply Section -->
+    <div class="message-reply">
+        <textarea placeholder="Enter your reply"></textarea>
+        <button class="send-reply-btn">Send Reply</button>
+    </div>
+    
+    <div class="actions">
+        <button class="accept-btn" onclick="updateStatus(this, 'Accepted')">Accept</button>
+        <button class="decline-btn" onclick="updateStatus(this, 'Declined')">Decline</button>
+    </div>
+                </div>
+                <!-- Female Request 2 -->
+                <div class="request-item">
+                    <div class="boarding-house-info">
+                        <div class="owner-image">
+                            <img src="https://i.pinimg.com/736x/fa/9d/46/fa9d46e454628ae6ffe21c01c79d7e5f.jpg" alt="Owner Image">
+                        </div>
+                        <div class="details">
+                            <span class="name">Sophia Carter</span>
+                            <span>Boarding House Owner</span>
+                            <span>Location: MNO Street, XYZ City</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p><strong>First Name:</strong> Sophia</p>
+                        <p><strong>Last Name:</strong> Carter</p>
+                        <p><strong>E-Mail Address:</strong> sophia.carter@email.com</p>
+                        <p><strong>Phone #:</strong> +63966548529</p>
+                        <p><strong>Address:</strong> 202 Maple St, XYZ City</p>
+                        <p><strong>City:</strong> XYZ City</p>
+                        <p><strong>Emergency Contact Person:</strong> Olivia Carter</p>
+                        <p><strong>Emergency Contact Number:</strong> +63966548530</p>
+                        <p><strong>Facebook Account:</strong> facebook.com/sophiacarter</p>
+                        <p><strong>Do you want to visit physically?</strong> Yes</p>
+                        <p><strong>Message:</strong> I'm excited for the visit!</p>
+                    </div>
+                    <p class="status">Status: Pending</p> <!-- Status section -->
+
+                    <!-- Message Reply Section -->
+                    <div class="message-reply">
+                        <textarea placeholder="Enter your reply"></textarea>
+                        <button class="send-reply-btn">Send Reply</button>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="accept-btn" onclick="updateStatus(this, 'Accepted')">Accept</button>
+                        <button class="decline-btn" onclick="updateStatus(this, 'Declined')">Decline</button>
+                    </div>
+                </div>
+                <!-- Female Request 3 -->
+                <div class="request-item">
+                    <div class="boarding-house-info">
+                        <div class="owner-image">
+                            <img src="https://i.pinimg.com/736x/42/8e/22/428e222b8a30df12691184d1594654ee.jpg" alt="Owner Image">
+                        </div>
+                        <div class="details">
+                            <span class="name">Emily Roberts</span>
+                            <span>Boarding House Owner</span>
+                            <span>Location: PQR Street, ABC City</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p><strong>First Name:</strong> Emily</p>
+                        <p><strong>Last Name:</strong> Roberts</p>
+                        <p><strong>E-Mail Address:</strong> emily.roberts@email.com</p>
+                        <p><strong>Phone #:</strong> +63966548531</p>
+                        <p><strong>Address:</strong> 303 Birch St, ABC City</p>
+                        <p><strong>City:</strong> ABC City</p>
+                        <p><strong>Emergency Contact Person:</strong> Rachel Roberts</p>
+                        <p><strong>Emergency Contact Number:</strong> +63966548532</p>
+                        <p><strong>Facebook Account:</strong> facebook.com/emilyroberts</p>
+                        <p><strong>Do you want to visit physically?</strong> Yes</p>
+                        <p><strong>Message:</strong> Looking forward to visiting!</p>
+                    </div>
+                    <p class="status">Status: Pending</p> <!-- Status section -->
+
+                    <!-- Message Reply Section -->
+                    <div class="message-reply">
+                        <textarea placeholder="Enter your reply"></textarea>
+                        <button class="send-reply-btn">Send Reply</button>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="accept-btn" onclick="updateStatus(this, 'Accepted')">Accept</button>
+                        <button class="decline-btn" onclick="updateStatus(this, 'Declined')">Decline</button>
+                    </div>
+                          <!-- New Message Feature -->
+          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+            <!-- Additional requests can go here -->
+        </div>
+    </div>
+
+
+    <!-- Footer (already exists) -->
+    
+    <script src="cart.js"></script> <!-- Link to the external JS file -->
+</body>
+</html>

@@ -6,17 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Our Marketplace</title>
   <link rel="stylesheet" href="home.css"> <!-- Link to your CSS file -->
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
   <!-- Header Section -->
+   
   <header class="header">
     <nav class="nav-bar">
+      <img src="https://i.pinimg.com/originals/7d/42/58/7d42584bf2c0a162485b7a1622fe60c6.webp" alt="Microsoft" class="logo">
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="Categories.html">Categories</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="Tenant.html">We-Book</a></li>
+        <li><a href="Contact.html">About Us</a></li>
       </ul>
+
+      <ul class="right-menu">
+        <li>
+            <a href="userprofile.html">
+                <i class="fas  fa-user"></i>
+            </a>
+        </li>
+        <li>
+            <a href="Cart.html">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </li>
+    </ul>
     </nav>
   </header>
 
@@ -25,73 +43,127 @@
     <p class="tagline">Explore our trusted boarding houses</p>
     <p>Our boarding house website offers a user-friendly platform for students and professionals seeking comfortable, affordable accommodation. With detailed listings of available rooms, an easy online booking system, and a vibrant community for social engagement, we ensure a homely atmosphere.</p>
     <p>Conveniently located near public transportation and local amenities, we provide on-site support to foster a safe and welcoming environment. Join us for a living experience that feels like home!</p>
-    <button>Start Browsing</button>
+    <a href="Categories.html">
+      <button class="btn btn-warning">
+          Start Browsing
+      </button>
+  </a>
+
 </section>
 
-
-  <!-- Carousel Section for Boarding Houses -->
-  <section class="carousel">
-    <div class="carousel-container">
-      <!-- Carousel Inner Container with Multiple Boarding Houses -->
-      <div class="carousel-item">
-        <div class="product-overview">
-          <div class="product-image">
-            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/497806866.jpg?k=4a330f6ff9d5a80ae4613403826d225632b149851e5b085a8080e451c08ad8f2&o=&hp=1" alt="Juan Boarding House">
-          </div>
-          <div class="product-details">
-            <h1>Juan Boarding House</h1>
-            <p>Near ISU Echague</p>
-            <p>Comfortable, convenient, and affordable boarding</p>
-            <p>house located close to the campus.</p>
-            <p>Price: Php 3,000 / month</p>
-            <p>_____________________________________</p>
-      
-            <button class="location-button" onclick="window.location.href='camarag_map.html'">Show Location</button>
-            <button class="rent-now">Rent Now</button>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="product-overview">
-          <div class="product-image">
-            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/497806875.jpg?k=0fdd6d301ccfec70ec2d0c98ee6e73799e21c8f1e0b2644c5f8f7f2b206e4340&o=&hp=1" alt="Ibay Boarding House">
-          </div>
-          <div class="product-details">
-            <h1>Ibay Boarding House</h1>
-            <p>Located in Pinzon Phase 2</p>
-            <p>Price: Php 2,800 / month</p>
-              <button class="location-button" onclick="window.location.href='camarag_map.html'">Show Location</button>
-            <button class="rent-now">Rent Now</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="product-overview">
-          <div class="product-image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQQC17RN-GkLyGB1e_oGPzCFtSDzKqqhrjCAJRmUcNnT2uR3SFgBMgVu83-5Lv5o_0yg&usqp=CAU" alt="SNJ Boarding House">
-          </div>
-          <div class="product-details">
-            <h1>SNJ Boarding House</h1>
-            <p>Beside Ms. G</p>
-            <p>Price: Php 3,200 / month</p>
-            <button class="rent-now">Rent Now</button>
-          </div>
-        </div>
+<section class="game-section">
+  <h2 class="line-title">Boarding House District</h2>
+  <div class="custom-carousel owl-carousel owl-theme">
+    <div class="item" style="background-image: url(https://i.pinimg.com/736x/94/f6/00/94f6001a626b5140ace34d74a9928f05.jpg);">
+      <div class="item-desc">
+        <h3>Camarag</h3>
+        <p>"Camarag Village is a residential subdivision located near Isabela State University (ISU)."</p>
       </div>
     </div>
+    <div class="item" style="background-image: url(https://i.pinimg.com/736x/88/73/b9/8873b9f1e2b6f2503cf061b7c5edcbc2.jpg);">
+      <div class="item-desc">
+        <h3>Velasco</h3>
+        <p>"Velasco subdivision is a residential subdivision located along the Pan-Philippine Highway"</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://i.pinimg.com/736x/d1/15/c7/d115c7e214a5765aba7cb5f6485b6424.jpg);">
+      <div class="item-desc">
+        <h3>Pinzon Main</h3>
+        <p>"Pinzon subdivision is a residential subdivision located near at 7/11 convenience store"</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://i.pinimg.com/736x/eb/2b/ad/eb2bad09fe86b6ac48bf7bed08146ec5.jpg);">
+      <div class="item-desc">
+        <h3>Pinzon Phase-2</h3>
+        <p>"Pinzon Phase-2 subdivision is a residential subdivision located along the Pan-Philippine Highway"</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://i.pinimg.com/736x/7d/e0/ab/7de0aba2e8796070cf8e37567e2dc403.jpg);">
+      <div class="item-desc">
+        <h3>ISU Dormitory</h3>
+        <p>"ISU Dormitory is a Student Dorminotry located inside the ISU Campus".</p>
+      </div>
+    </div>
+</section>
+<!-- Include jQuery and Owl Carousel JS and CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
-    <!-- Carousel Controls -->
-    <button class="carousel-control prev" onclick="moveCarousel(-1)"><</button>
-    <button class="carousel-control next" onclick="moveCarousel(1)">></button>
+
+
+    <!-- Home cards 1 -->
+
+      <h4 class="title">Featured Boarding Houses</h4>
+      <section class="home-cards">
+        <div>
+            <img src="https://i.pinimg.com/736x/1b/97/6d/1b976dfe7e63876ecef1f7241c7b9f1a.jpg" alt="">
+            <h5>EJ's BOARDING HOUSE</h5>
+            <p>
+              Comfortable, convenient, and affordable boarding house located at Camarag Village.
+              _____________________________
+              <span class="price">Price: Php 900 / month</span>
+            </p>
+            <a href="camarag1.html">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+      <div>
+          <img src="https://i.pinimg.com/736x/0e/fa/72/0efa72b2165755226cbac70bfb0c9657.jpg" alt="" />
+          <h5>JUAN BOARDING HOUSE</h5>
+          <p>
+            Cozy, accessible, and budget-friendly boarding house situated in Pinzon Phase-2.
+            _____________________________
+            <span class="price">Price: Php 1,000 / month</span>
+          </p>
+          <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+          <img src="https://i.pinimg.com/736x/59/e6/ea/59e6eab9cb2798b0f49bbbb351c1a0f2.jpg" alt="" />
+          <h5>MIRASOL BOARDING HOUSE</h5>
+          <p>
+            Relaxing, convenient, and wallet-friendly boarding house located at Pinzon Main.
+            _____________________________
+            <span class="price">Price: Php 1,100 / month</span>
+          </p>
+          <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+          <img src="https://i.pinimg.com/736x/7d/e0/ab/7de0aba2e8796070cf8e37567e2dc403.jpg" alt="" />
+          <h5>ISU DORMITORY</h5>
+          <p>
+              Comfortable, central, and affordable lodging for students available at ISU Dormitory.
+              _____________________________
+              <span class="price">Price: Php 1,200 / month</span>
+          </p>
+          <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/736x/37/b4/88/37b4882a87edb8f4d316256ccd749884.jpg" alt="" />
+        <h5>PBB BOARDING HOUSE</h5>
+        <p>
+            Affordable, practical, and welcoming boarding house nestled in Velasco Subdivision.
+            _____________________________
+            <span class="price">Price: Php 1,200 / month</span>
+        </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+    </div>
   </section>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2024 Our Marketplace</p>
-  </footer>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="footer-inner">
+  <div><i class="fas fa-globe fa-2x"></i> English (United States)</div>
+  <ul>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="#">Contact We-Boarding</a></li>
+      <li><a href="#">Privacy & cookies</a></li>
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#">Safety & eco</a></li>
+      <li><a href="#">About our website</a></li>
+      <li><a href="#">&copy; SNJ We-Boarding 2024</a></li>
+  </ul>
+</div>
+</footer>
 
   <!-- JavaScript -->
   <script src="home.js"></script>

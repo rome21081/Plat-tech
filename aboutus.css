@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light grey background */
+    color: #333; /* Dark text color for contrast */
+  }
+  
+.about-us {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: row; /* Arrange content and image side by side */
+    max-width: 1200px; /* Set max-width for the container */
+    margin: 40px auto; /* Center the container with top/bottom margin */
+    padding: 20px; /* Padding inside the container */
+    background-color: #ffffff; /* Light background color */
+}
+
+.content {
+    flex: 1; /* Allow content to take available space */
+    margin-right: 20px; /* Space between content and image */
+}
+
+.image {
+    flex: 0 0 50%; /* Set image to take 50% of the container width */
+    max-height: 250px; /* Set a maximum height for the image container */
+    overflow: hidden; /* Hide overflow to maintain the height */
+    display: flex; /* Flexbox for image container */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    align-self: center; /* Center the image in the flex container */
+}
+
+.image img {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.about-us h1 {
+    text-align: center; /* Center the main heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 36px; /* Increase font size for the main heading */
+}
+
+.mission {
+    margin-bottom: 40px; /* Space between mission and vision sections */
+}
+
+.mission h2 {
+    margin-top: 0; /* Remove top margin for headings */
+    font-size: 28px; /* Increase font size for section headings */
+}
+
+.mission p {
+    font-size: 20px; /* Increase font size for paragraphs */
+    line-height: 1.6; /* Line height for readability */
+    color: #000000; /* Dark gray text color */
+}
+
+/* Button container styles */
+.button-container {
+    display: flex; /* Use Flexbox for the button container */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Space above the button container */
+}
+
+/* Button styles */
+.team, .contact {
+    display: inline-block; /* Make the buttons inline-block */
+    padding: 10px 20px; /* Padding for the buttons */
+    font-size: 18px; /* Font size for the button text */
+    color: #fff; /* Text color */
+    background-color: #007BFF; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between buttons */
+}
+
+.team:hover, .contact:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+/* Header */
+.header { 
+    background-color: #f8f8f8; 
+    padding: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+} 
+
+.nav-bar ul { 
+    display: flex; 
+    list-style: none; 
+    justify-content: center; 
+} 
+
+.nav-bar ul li { 
+    margin-right: 20px; 
+} 
+
+.nav-bar ul li a { 
+    color: #333; 
+    font-weight: bold; 
+}
+
+/* Header */
+.header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-bar .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+  }
+  
+  .nav-bar ul li {
+    margin-right: 20px;
+  }
+  
+  .nav-bar ul li a {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-bar ul.right-menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2%;
+  }
+  
+  .nav-bar ul.right-menu li {
+    margin-left: auto;
+  }
+  
+  .nav-bar ul.right-menu li a {
+    color: #333;
+  }
+  
+  .nav-bar ul li a:hover, 
+  .nav-bar ul.right-menu li a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #262626;
+  }

@@ -5,99 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camarag</title>
     <link rel="stylesheet" href="Camarag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <!-- Dropdown Menu Button -->
-            <button class="dropdown-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
-                </svg>
-            </button>
-            <!-- Dropdown Menu Content -->
-            <div class="dropdown-content">
-                <a href="tite.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Contact.html">Contact Us</a>
-            </div>
+    <header class="header">
+        <nav class="nav-bar">
+          <img src="https://i.pinimg.com/originals/7d/42/58/7d42584bf2c0a162485b7a1622fe60c6.webp" alt="Microsoft" class="logo">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+    
+            <li class="dropdown"> 
+                <div class="dropdown-content" id="myDropdown">
+                    <select id="locationSelect">
+                        <option value="">Categories</option>
+                        <option value="Camarag">Camarag</option>
+                        <option value="Phinzon Phase 1">Phinzon Phase 1</option>
+                        <option value="Phinzon Phase 2">Phinzon Phase 2</option>
+                        <option value="ISU Coop">ISU Coop</option>
+                        <option value="ISU Boarding">ISU Boarding</option>
+                        <option value="Velsaco">Velsaco</option>
+                    </select>
+                    <button id="goButton">Go</button>
+                </div>
+    
+            <li><a href="Tenant.html">We-Book</a></li>
+            <li><a href="Contact.html">About Us</a></li>
+          </ul>
+    
+          <ul class="right-menu">
+            <li>
+                <a href="userprofile.html">
+                    <i class="fas  fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
         </nav>
-    </header>
+      </header>
+    <h2>CAMARAG</h2>
 
-    <h2>Camarag</h2>
     <div class="grid-container">
         <!-- Grid Items -->
         <div class="grid-item">
             <a href="camarag1.html">
-                <img src="https://i.pinimg.com/236x/7c/0a/83/7c0a8333f2747e270ab420cdbc4e5820.jpg" alt="Camarag Image 1">
+                <img src="https://i.pinimg.com/736x/1b/97/6d/1b976dfe7e63876ecef1f7241c7b9f1a.jpg" alt="Camarag Image 1">
                 <div class="image-overlay">
                     <div class="badge new">New</div>
+                    <h1>EJ's Boarding House</h1>
                 </div>
             </a>
         </div>
         <div class="grid-item">
             <a href="camarag.html">
-                <img src="https://i.pinimg.com/236x/7c/0a/83/7c0a8333f2747e270ab420cdbc4e5820.jpg" alt="Camarag Image 2">
+                <img src="https://i.pinimg.com/736x/da/bf/fc/dabffc1d53a4adfe544c6ec7c46d8b27.jpg" alt="Camarag Image 1">
                 <div class="image-overlay">
                     <div class="badge sale">Sale</div>
+                    <h1>Maria Boarding House</h1>
                 </div>
             </a>
         </div>
         <div class="grid-item">
             <a href="camarag.html">
-                <img src="https://i.pinimg.com/236x/7c/0a/83/7c0a8333f2747e270ab420cdbc4e5820.jpg" alt="Camarag Image 3">
+                <img src="https://i.pinimg.com/736x/61/90/1c/61901c5087074c73590b7494e097d885.jpg" alt="Camarag Image 1">
                 <div class="image-overlay">
                     <div class="badge">Featured</div>
+                    <h1>JayDen Boarding House</h1>
                 </div>
             </a>
         </div>
         <div class="grid-item">
             <a href="camarag.html">
-                <img src="https://i.pinimg.com/236x/7c/0a/83/7c0a8333f2747e270ab420cdbc4e5820.jpg" alt="Camarag Image 4">
+                <img src="https://i.pinimg.com/736x/cb/13/92/cb1392b327334657c806193c72ba25f5.jpg" alt="Camarag Image 1">
                 <div class="image-overlay">
                     <div class="badge">Featured</div>
+                    <h1>Roger's Boarding House</h1>
                 </div>
             </a>
         </div>
         <div class="grid-item">
             <a href="camarag.html">
-                <img src="https://i.pinimg.com/236x/c5/2d/ee/c52dee29580a19deb0eecac0f1db39a2.jpg" alt="Camarag Image 5">
-                <div class="image-overlay">
+                <img src="https://i.pinimg.com/736x/2b/a8/b8/2ba8b8cd764144e705ef1c39fae03ca9.jpg" alt="Camarag Image 1">
+                    <div class="image-overlay">
                     <div class="badge">Featured</div>
+                    <h1>CARIAGA Boarding House</h1>
                 </div>
             </a>
         </div>
         <div class="grid-item">
             <a href="camarag.html">
-                <img src="https://i.pinimg.com/236x/c5/2d/ee/c52dee29580a19deb0eecac0f1db39a2.jpg" alt="Camarag Image 6">
-                <div class="image-overlay">
+                <img src="https://i.pinimg.com/736x/a3/39/23/a33923e35ed64fac296b83757293668b.jpg" alt="Camarag Image 1">                
+                    <div class="image-overlay">
                     <div class="badge">Featured</div>
+                    <h1>Bedania Boarding House</h1>
                 </div>
             </a>
         </div>
         <div class="grid-item">
             <a href="camarag.html">
-                <img src="https://i.pinimg.com/236x/77/bf/84/77bf8474401eab8016490aed09dbf0ed.jpgtite123.jpg" alt="Camarag Image 7">
+                <img src="https://i.pinimg.com/736x/1f/4e/1d/1f4e1d5a63ef1875c73ef4008eeec721.jpg" alt="Camarag Image 1">                
                 <div class="image-overlay">
                     <div class="badge">Featured</div>
+                    <h1>XYZ Boarding House</h1>
                 </div>
             </a>
         </div>
         <div class="grid-item">
             <a href="camarag.html">
-                <img src="https://i.pinimg.com/236x/77/bf/84/77bf8474401eab8016490aed09dbf0ed.jpg" alt="Camarag Image 8">
+                <img src="https://i.pinimg.com/736x/2b/7f/72/2b7f722d9403ed0f13fecbfbd385c047.jpg" alt="Camarag Image 1">                
                 <div class="image-overlay">
                     <div class="badge">Featured</div>
-                </div>
+                    <h1>ABC Boarding House</h1>
+                </div>  
             </a>
         </div>
-        <div class="grid-item">
-            <a href="camarag.html">
-                <img src="https://i.pinimg.com/236x/77/bf/84/77bf8474401eab8016490aed09dbf0ed.jpg" alt="Camarag Image 9">
-                <div class="image-overlay">
-                    <div class="badge">Featured</div>
-                </div>
             </a>
         </div>
     </div>
