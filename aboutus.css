@@ -1,167 +1,518 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8; /* Light grey background */
-    color: #333; /* Dark text color for contrast */
-  }
-  
+body {
+  font-family: Arial, sans-serif; /* Set font for the body */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
 .about-us {
-    display: flex; /* Use Flexbox for layout */
-    flex-direction: row; /* Arrange content and image side by side */
-    max-width: 1200px; /* Set max-width for the container */
-    margin: 40px auto; /* Center the container with top/bottom margin */
-    padding: 20px; /* Padding inside the container */
-    background-color: #ffffff; /* Light background color */
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: row; /* Arrange content and image side by side */
+  max-width: 1200px; /* Set max-width for the container */
+  margin: 40px auto; /* Center the container with top/bottom margin */
+  padding: 20px; /* Padding inside the container */
+  background-color: #ffffff; /* Light background color */
 }
 
 .content {
-    flex: 1; /* Allow content to take available space */
-    margin-right: 20px; /* Space between content and image */
+  flex: 1; /* Allow content to take available space */
+  margin-right: 20px; /* Space between content and image */
 }
 
 .image {
-    flex: 0 0 50%; /* Set image to take 50% of the container width */
-    max-height: 250px; /* Set a maximum height for the image container */
-    overflow: hidden; /* Hide overflow to maintain the height */
-    display: flex; /* Flexbox for image container */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    align-self: center; /* Center the image in the flex container */
+  flex: 0 0 50%; /* Set image to take 50% of the container width */
+  max-height: 250px; /* Set a maximum height for the image container */
+  overflow: hidden; /* Hide overflow to maintain the height */
+  display: flex; /* Flexbox for image container */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  align-self: center; /* Center the image in the flex container */
 }
 
 .image img {
-    width: 100%; /* Ensure the image takes the full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the entire area */
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the entire area */
 }
 
 .about-us h1 {
-    text-align: center; /* Center the main heading */
-    margin-bottom: 20px; /* Space below the heading */
-    font-size: 36px; /* Increase font size for the main heading */
+  text-align: center; /* Center the main heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 36px; /* Increase font size for the main heading */
 }
 
 .mission {
-    margin-bottom: 40px; /* Space between mission and vision sections */
+  margin-bottom: 40px; /* Space between mission and vision sections */
 }
 
 .mission h2 {
-    margin-top: 0; /* Remove top margin for headings */
-    font-size: 28px; /* Increase font size for section headings */
+  margin-top: 0; /* Remove top margin for headings */
+  font-size: 28px; /* Increase font size for section headings */
 }
 
 .mission p {
-    font-size: 20px; /* Increase font size for paragraphs */
-    line-height: 1.6; /* Line height for readability */
-    color: #000000; /* Dark gray text color */
+  font-size: 20px; /* Increase font size for paragraphs */
+  line-height: 1.6; /* Line height for readability */
+  color: #000000; /* Dark gray text color */
 }
 
 /* Button container styles */
 .button-container {
-    display: flex; /* Use Flexbox for the button container */
-    justify-content: center; /* Center the buttons horizontally */
-    margin-top: 20px; /* Space above the button container */
+  display: flex; /* Use Flexbox for the button container */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 20px; /* Space above the button container */
 }
 
 /* Button styles */
 .team, .contact {
-    display: inline-block; /* Make the buttons inline-block */
-    padding: 10px 20px; /* Padding for the buttons */
-    font-size: 18px; /* Font size for the button text */
-    color: #fff; /* Text color */
-    background-color: #007BFF; /* Button background color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline */
-    margin: 0 10px; /* Space between buttons */
+  display: inline-block; /* Make the buttons inline-block */
+  padding: 10px 20px; /* Padding for the buttons */
+  font-size: 18px; /* Font size for the button text */
+  color: #fff; /* Text color */
+  background-color: #007BFF; /* Button background color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Space between buttons */
 }
 
 .team:hover, .contact:hover {
-    background-color: #0056b3; /* Darker background on hover */
+  background-color: #0056b3; /* Darker background on hover */
 }
 /* Header */
 .header { 
-    background-color: #f8f8f8; 
-    padding: 10px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  background-color: #f8f8f8; 
+  padding: 20px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 } 
 
 .nav-bar ul { 
-    display: flex; 
-    list-style: none; 
-    justify-content: center; 
+  display: flex; 
+  list-style: none; 
+  justify-content: center; 
 } 
 
 .nav-bar ul li { 
-    margin-right: 20px; 
+  margin-right: 20px; 
 } 
 
 .nav-bar ul li a { 
-    color: #333; 
-    font-weight: bold; 
+  color: #333; 
+  font-weight: bold; 
 }
 
 /* Header */
 .header {
-    background-color: #f8f8f8;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-  }
-  
-  .nav-bar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .nav-bar .logo {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-  }
-  
-  .nav-bar ul {
-    display: flex;
-    list-style: none;
-    justify-content: flex-start;
-  }
-  
-  .nav-bar ul li {
-    margin-right: 20px;
-  }
-  
-  .nav-bar ul li a {
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .nav-bar ul.right-menu {
-    display: flex;
-    margin-left: auto;
-    margin-right: 2%;
-  }
-  
-  .nav-bar ul.right-menu li {
-    margin-left: auto;
-  }
-  
-  .nav-bar ul.right-menu li a {
-    color: #333;
-  }
-  
-  .nav-bar ul li a:hover, 
-  .nav-bar ul.right-menu li a:hover {
-    color: #007bff;
-    border-bottom: 2px solid #262626;
-  }
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-bar .logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.nav-bar ul li {
+  margin-right: 20px;
+}
+
+.nav-bar ul li a {
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-bar ul.right-menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+.nav-bar ul.right-menu li {
+  margin-left: auto;
+}
+
+.nav-bar ul.right-menu li a {
+  color: #333;
+}
+
+.nav-bar ul li a:hover, 
+.nav-bar ul.right-menu li a:hover {
+  color: #007bff;
+  border-bottom: 2px solid #262626;
+}
+.our-services {
+  text-align: center; /* Center the text */
+  margin: 40px 0; /* Add margin above and below */
+}
+
+.our-services h2 {
+  font-size: 28px; /* Font size for the heading */
+  color: #333; /* Text color */
+}
+.service-boxes {
+display: flex; /* Use Flexbox for layout */
+justify-content: space-around; /* Space out the boxes */
+flex-wrap: wrap; /* Allow wrapping on smaller screens */
+margin: 40px 0; /* Margin above and below the boxes */
+}
+
+.service-box {
+background-color: #f0f0f0; /* Light background color for boxes */
+border: 1px solid #ddd; /* Border around boxes */
+border-radius: 8px; /* Rounded corners */
+padding: 20px; /* Padding inside the boxes */
+text-align: center; /* Center text inside boxes */
+flex: 1 1 20%; /* Allow boxes to grow and shrink, set base width */
+margin: 10px; /* Margin around each box */
+transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.service-box:hover {
+transform: scale(1.05); /* Scale up on hover */
+}
+
+.service-box i {
+font-size: 40px; /* Size for the icon */
+color: #007bff; /* Icon color */
+margin-bottom: 10px; /* Space below the icon */
+}
+
+.service-box h3 {
+font-size: 24px; /* Font size for service title */
+margin: 10px 0; /* Margin above and below the title */
+}
+
+.service-box p {
+font-size: 16px; /* Font size for description */
+color: #666; /* Dark gray text color */
+}
+.where-it-all-starts {
+text-align: center; /* Center the text */
+margin: 20px 0; /* Add margin above and below */
+}
+
+.where-it-all-starts h2 {
+font-size: 28px; /* Font size for the heading */
+color: #333; /* Dark gray text color */
+}
+.where-it-all-starts {
+display: flex; /* Use flexbox for layout */
+align-items: center; /* Center items vertically */
+justify-content: space-between; /* Space between image and text */
+margin: 20px 0; /* Add margin above and below */
+}
+
+.right-image {
+flex: 0 0 50%;
+}
+
+.right-image {
+  background-color: transparent; /* Ensures the background of the container is transparent */
+}
+
+.right-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+ 
+}
+
+
+.left-text {
+    flex: 1; 
+    padding: 20px; 
+    font-size: 20px; 
+    max-width: 600px; /* Optional: Limits the width of the text area */
+}
+
+.left-text h2 {
+    font-size: 36px; 
+    margin-bottom: 20px; 
+}
+
+.section-title {
+    font-size: 28px; 
+    color: #333; 
+    text-align: center; 
+    margin: 20px 0;
+}
+
+.button-container {
+    text-align: center;  /* Centers the button */
+    margin-top: 20px; /* Adds space above the button */
+}
+
+.team {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #064089; /* Button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.team:hover {
+    background-color: #03396c; /* Button hover effect */
+}
+.left-text {
+    flex: 1; 
+    padding: 20px; 
+    font-size: 20px; 
+    max-width: 600px; /* Optional: Limits the width of the text area */
+    margin-left: 0; /* Aligns the content to the left */
+}
+
+.left-text h2 {
+    font-size: 36px; 
+    margin-bottom: 20px; 
+}
+
+.section-title {
+    font-size: 28px; 
+    color: #333; 
+    text-align: left; /* Aligns the title to the left */
+    margin: 20px 0;
+}
+
+.button-container {
+    text-align: left;  /* Aligns the button to the left */
+    margin-top: 20px; /* Adds space above the button */
+}
+
+.team {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #064089; /* Button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.team:hover {
+    background-color: #03396c; /* Button hover effect */
+}
+.left-text {
+  flex: 1; 
+  padding: 20px; 
+  font-size: 20px; 
+  margin-right: 18%;
+  max-width: 600px; /* Optional: Limits the width of the text area */
+}
+
+.left-text h2 {
+  font-size: 36px; 
+  margin-bottom: 20px; 
+}
+
+.section-title {
+  font-size: 28px; 
+  color: #333; 
+  text-align: center; 
+  margin: 20px 0;
+}
+
+.button-container {
+  text-align: center;  /* Centers the button */
+  margin-top: 20px; /* Adds space above the button */
+}
+
+.team {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #064089; /* Button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.team:hover {
+  background-color: #03396c; /* Button hover effect */
+}
+
+/*new code*/
+.icon-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+max-width: 900px;
+gap: 20px;
+text-align: center;
+margin: 0 auto;
+}
+
+.icon-box {
+text-align: center;
+padding: 20px 10px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+min-width: 120px;
+}
+
+
+.icon-box i {
+font-size: 40px;
+color: #4a90e2; 
+margin-bottom: 10px;
+}
+
+
+.icon-box p {
+font-size: 14px;
+color: #333;
+margin: 0;
+font-weight: 500;
+}
+
+
+.icon-box:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*new code kulay*/
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+}
+
+footer {
+background-color: #222;
+color: #fff;
+}
+
+.footer-top {
+display: flex;
+justify-content: space-around;
+padding: 20px;
+border-bottom: 1px solid #444;
+}
+
+.contact-info {
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+
+.icon-text {
+text-align: center;
+}
+
+.icon {
+width: 40px;
+height: 40px;
+background-color: #4a90e2;
+border-radius: 50%;
+margin: 0 auto 10px;
+}
+
+.footer-middle {
+display: flex;
+justify-content: space-around;
+padding: 20px 0;
+}
+
+.footer-section {
+flex: 1;
+margin: 10px;
+text-align: center;
+}
+
+.footer-section h4 {
+border-bottom: 2px solid #444;
+display: inline-block;
+margin-bottom: 10px;
+padding-bottom: 5px;
+}
+
+.footer-section ul {
+list-style-type: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin: 10px 0;
+}
+
+.footer-section ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+text-decoration: underline;
+}
+
+.footer-section form {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.footer-section input[type="email"] {
+padding: 10px;
+border: none;
+border-radius: 3px 0 0 3px;
+}
+
+.footer-section button {
+padding: 10px;
+background-color:#4a90e2;
+border: none;
+border-radius: 0 3px 3px 0;
+cursor: pointer;
+}
+
+.footer-section button:hover {
+background-color:#4a90e2;
+}
+
+.footer-bottom {
+text-align: center;
+padding: 20px 0;
+border-top: 1px solid #444;
+}
+
+.social-icons a img {
+width: 30px;
+margin: 0 10px;
+}
+
+.icon-text {
+text-align: center;
+margin: 10px;
+}
+
+.icon-text i {
+font-size: 30px;
+color: #4a90e2; /* Adjust the color to match the design */
+margin-bottom: 10px;
+display: block;
+}

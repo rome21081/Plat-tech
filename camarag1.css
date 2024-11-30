@@ -497,7 +497,7 @@
         align-items: center;
     }
     .product-imgs{
-        display: flex;
+        display: justify;
         flex-direction: column;
         justify-content: center;
     }
