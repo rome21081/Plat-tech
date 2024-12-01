@@ -490,7 +490,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
-     .card-wrapper{
+    .card-wrapper{
       margin-top: 1%;
         height: 100vh;
         display: justify;

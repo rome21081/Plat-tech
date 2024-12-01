@@ -15,8 +15,8 @@ const markersData = [
     { coords: [16.7200, 121.6900], name: 'ISU MAIN CAMPUS' },
     
     // Adjusted New Locations (now closer to the grey rectangles or house blocks)
-    { coords: [16.7228, 121.6842], name: 'New Location 1' }, // Adjusted to be near New Location 2 and 4
-    { coords: [16.7222, 121.6844], name: 'New Location 2' }, // Adjusted position closer to New Location 1
+    { coords: [16.7228, 121.6842], name: 'Janes Boarding House' }, // Adjusted to be near New Location 2 and 4
+    { coords: [16.7222, 121.6844], name: 'BGC Boarding House' }, // Adjusted position closer to New Location 1
     { coords: [16.7223, 121.6840], name: 'New Location 3' }, // Close to EJ Boarding House
     { coords: [16.7220, 121.6845], name: 'New Location 4' }, // Adjusted to fit within block area (near Aljades)
 ];

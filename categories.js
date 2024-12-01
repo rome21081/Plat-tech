@@ -60,8 +60,8 @@ function updateMarker() {
         case 'ISU Boarding':
             window.location.href = 'isu_boarding.html';
             break;
-        case 'Velsaco':
-            window.location.href = 'velsaco.html';
+        case 'Velasco':
+            window.location.href = 'velasco.html';
             break;
         default:
             alert('Please select a category to proceed.'); // Alert for empty selection
